@@ -1,0 +1,39 @@
+{
+  "name": "yet_another_js_course",
+  "version": "1.0.0",
+  "description": "JS for QA/AQA course",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha Unit*/**/*.spec.js",
+    "test:unit0": "mocha Unit-0/*.spec.js",
+    "test:unit1": "mocha Unit-1/test/*.spec.js",
+    "test:unit2": "mocha Unit-2/test/*.spec.js",
+    "test:unit2:conditions": "mocha Unit-2/test/conditions.spec.js",
+    "test:unit2:cycles": "mocha Unit-2/test/cycles.spec.js",
+    "test:unit3": "mocha Unit-3/test/*.spec.js",
+    "test:unit4": "mocha Unit-4/test/*.spec.js",
+    "test:unit4:arrays": "mocha Unit-4/test/arrays.spec.js",
+    "test:unit4:strings": "mocha Unit-4/test/strings.spec.js",
+    "test:unit5": "mocha Unit-5/test/*.spec.js",
+    "test:unit5:objects": "mocha Unit-5/test/objects.spec.js",
+    "test:unit5:classes": "mocha Unit-5/test/classes.spec.js",
+    "test:unit6": "mocha Unit-6/test/*.spec.js",
+    "test:unit6:promises": "mocha Unit-6/test/promises.spec.js",
+    "test:unit6:async": "mocha Unit-6/test/asyncAwait.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ovartem/yet_another_js_course.git"
+  },
+  "author": "ov.artem90@gmail.com",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://github.com/ovartem/yet_another_js_course#readme",
+  "dependencies": {
+    "chai": "^4.3.5",
+    "chance": "^1.1.8",
+    "eslint": "^8.7.0",
+    "lodash": "^4.17.21",
+    "mocha": "^9.2.0",
+    "sinon": "^12.0.1"
+  }
+}
