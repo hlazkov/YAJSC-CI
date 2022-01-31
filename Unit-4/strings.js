@@ -14,18 +14,14 @@
  * Task - 1
  * Create a task1Func which will verify if string str1 contains another string str2
  */
-let task1Func  = (str1, str2) => {
-  return str1.includes(str2);
-}
+let task1Func;// enter your code here
 
 /**
  * Level - Easy
  * Task - 2
  * Create a task2Func which will return index of another str2 in a str1
  */
-let task2Func  = (str1, str2) => {
-  return str1.indexOf(str2);
-}
+let task2Func;// enter your code here
 
 /**
  * Level - Easy
@@ -33,9 +29,7 @@ let task2Func  = (str1, str2) => {
  * Create a task3Func which will return a string replacing its part
  * with "Ah-a-ha-ha. Changing a part of the string" string
  */
-let task3Func  = (str, stringToReplace) => {
-  return str.replace(stringToReplace, "Ah-a-ha-ha. Changing a part of the string");
-}
+let task3Func;// enter your code here
 
 /**
  * Level - Easy
@@ -43,9 +37,7 @@ let task3Func  = (str, stringToReplace) => {
  * Create a task4Func which will remove unnecessary space at the beginning and end of the string
  * if result will be an empty string should return 'STRING IS EMPTY'
  */
-let task4Func  = (str) => {
-  return str.trim() ? str.trim() : 'STRING IS EMPTY';
-}
+let task4Func;// enter your code here
 
 /**
  * Level - Normal
@@ -55,13 +47,7 @@ let task4Func  = (str) => {
  * console.log(task5Func('google)) // 'elgoog'
  * console.log(task5Func(123)) // 'This is not a string!'
  */
-function task5Func(str) {
-  if (typeof str === 'string') {
-    return str.split('').reverse().join('');
-  } else {
-    return 'This is not a string!';
-  }
-}
+let task5Func;// enter your code here
 
 /**
  * Level - Normal
@@ -74,16 +60,7 @@ function task5Func(str) {
  * console.log(task6Func(601)) // 6
  * console.log(task6Func(21)) // 1
  */
-function task6Func(year) {
-  const yearStr = (year + '');
-  if (yearStr.length === 4) {
-    return Number(yearStr.slice(0, 2));
-  } else if (year.length === 3) {
-    return Number(yearStr.slice(0, 1));
-  } else {
-    return 1;
-  }
-}
+let task6Func;// enter your code here
 
 /**
  * Level - Normal
@@ -97,10 +74,7 @@ function task6Func(year) {
  * console.log(strCount('', 'z')) // 0
  * NOTE: don't use for loops
  */
-function task7Func(str, letter) {
-  const res = str.toLowerCase().match(new RegExp(letter.toLowerCase(), 'g'));
-  return res ? res.length : 0;
-}
+let task7Func;// enter your code here
 
 /**
  * Level - Normal
@@ -110,9 +84,7 @@ function task7Func(str, letter) {
  * @example
  * console.log(replaceConfidential("MR.[Johns] was responsible for ...")) // => "MR.[----] was responsible for ..."
  */
-function task8Func(str) {
-  return str.replace(/\[.*]/g, "[----]");
-}
+let task8Func;// enter your code here
 
 /**
  * Level - Normal
@@ -126,13 +98,7 @@ function task8Func(str) {
  * console.log(truncateString('The story begins long-long ago.', 6)) // 'TThe st...'
  * console.log(truncateString('Hello', 6)) // 'Hello'
  */
-function task9Func(str, maxLength) {
-  if (str.length > maxLength) {
-    return str.slice(0, maxLength) + '...';
-  } else {
-    return str;
-  }
-}
+let task9Func;// enter your code here
 
 /**
  * Hardcore tasks from codewars.com:

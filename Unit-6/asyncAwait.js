@@ -22,9 +22,7 @@ const {promise2, promise1} = require("./utils/utilPromises");
  * if promiseResolve() return "Blabla"
  * than function should return "Blabla was resolved with async await!"
  */
-async function asyncPromiseResolve() {
-  return `${await promiseResolve()} was resolved with async await!`;
-}
+// enter your code here
 
 /**
  * Level - Easy
@@ -35,9 +33,7 @@ async function asyncPromiseResolve() {
  * using async/await syntax
  * asyncPromiseAll() -> ["Promise1", "Promise2"]
  */
-async function asyncPromiseAll() {
-  return [await promise1(), await promise2()];
-}
+// enter your code here
 
 /**
  * Level - Normal
@@ -50,13 +46,7 @@ async function asyncPromiseAll() {
  * if promiseResolve() rejection reason was "BlablaRejected"
  * than function should catch an error and return "BlablaRejected was handled and result returned"
  */
-async function asyncPromiseReject() {
-  try{
-    await promiseReject();
-  } catch (e) {
-    return (e + " was handled and result returned");
-  }
-}
+// enter your code here
 
 module.exports = {
   asyncPromiseResolve,

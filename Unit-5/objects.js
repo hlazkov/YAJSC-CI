@@ -10,14 +10,7 @@
  * Create an object 'person' with 'firstName' and 'lastName' properties
  * Object should contain 'getFullName' method that returns full name ('firstName lastName')
  */
-// const person = ''; //put you object here
-let person = {
-	firstName: 'TEST',
-	lastName: 'sds',
-	getFullName: () => {
-		return person.firstName + " " + person.lastName
-	}
-}
+const person; // enter your code here
 
 /**
  * Level - Easy
@@ -28,7 +21,7 @@ let person = {
  * NOTE: use Object assign method
  */
 function makeRobot(person) {
-	return Object.assign(person, {batteryLevel: 3})
+	// enter your code here
 }
 
 /**
@@ -39,7 +32,7 @@ function makeRobot(person) {
  * try to find more than 1 way to do it
  */
 function isARobot (obj) {
-	return obj.hasOwnProperty('batteryLevel');
+	// enter your code here
 }
 
 /**
@@ -49,7 +42,7 @@ function isARobot (obj) {
  * get the list of object properties which values are Numbers
  */
 function task4Func (obj) {
-	return Object.keys(obj).filter(key => typeof obj[key] === 'number');
+	// enter your code here
 }
 
 /**

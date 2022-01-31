@@ -16,9 +16,8 @@
  * use function definition (also called a function declaration, or function statement)
  */
 
-function task1Func() {
-	return true;
-}
+// enter your code here
+
 
 /**
  * Level - Easy
@@ -28,7 +27,7 @@ function task1Func() {
  * use function expression
  */
 
-let task2Func = function(birth) { return 2022 - birth; }
+// enter your code here
 
 /**
  * Level - Easy
@@ -39,7 +38,7 @@ let task2Func = function(birth) { return 2022 - birth; }
  * use function expression with arrow function notation
  */
 
-let task3Func = (gender) => { return `My gender is ${gender ? (gender === 1 ? 'woman' : 'man') : 'other'}`; }
+// enter your code here
 
 /**
  * Level - Easy
@@ -48,7 +47,8 @@ let task3Func = (gender) => { return `My gender is ${gender ? (gender === 1 ? 'w
  * and calculate sum of those two params
  * NOTE: assume parameters are always numbers
  */
-let task4Func = (a, b) => a+b;
+
+// enter your code here
 
 /**
  * Level - Easy
@@ -56,7 +56,8 @@ let task4Func = (a, b) => a+b;
  * Create a function task5Func which will do same as the function from Task4
  * just make second parameter to have a default value equal 10
  */
-let task5Func = (a, b=10) => a+b;
+
+// enter your code here
 
 /**
  * Level - Easy
@@ -65,9 +66,8 @@ let task5Func = (a, b=10) => a+b;
  * e.g. {firstName: "Jack", lastName: "London"}
  * and returns a string firstName and lastName separated by space
  */
-function task6Func(object) {
-	return object.firstName + " " + object.lastName;
-}
+
+// enter your code here
 
 /**
  * Level - Easy
@@ -82,13 +82,8 @@ function task6Func(object) {
  *    age: 52
  * }
  */
-function task7Func(firstName = "", lastName = "", age = 0) {
-	return {
-		firstName: firstName,
-		lastName: lastName,
-		age: age,
-	}
-}
+
+// enter your code here
 
 /**
  * Level - Easy
@@ -97,9 +92,8 @@ function task7Func(firstName = "", lastName = "", age = 0) {
  * And returns true if odd and false if even
  * Hint: think about a remainder of two numbers
  */
-function task8Func(n) {
-	return !n%2;
-}
+
+// enter your code here
 
 /**
  * Level - Easy
@@ -108,17 +102,8 @@ function task8Func(n) {
  * @example
  * task9Func(["ten", "two", "four"]) // => ten
  */
-function task9Func(wordArray) {
-	let smallestNumber = 100;
-	let res;
-	for (let i of wordArray) {
-		if(i.length < smallestNumber) {
-			res = i;
-			smallestNumber = i.length;
-		}
-	}
-	return res;
-}
+
+// enter your code here
 
 /**
  * Level - Easy
@@ -128,13 +113,7 @@ function task9Func(wordArray) {
  * e.g [{direction: "Kiyv - Krakow", distance: 879}, {direction: "Kiyv - Tokyo", distance: 8193}]
  */
 
-function task10Func(paths) {
-	let res=0;
-	for (let i in paths) {
-		res += paths[i].distance;
-	}
-	return res;
-}
+// enter your code here
 
 /**
  * Level - Easy
@@ -147,9 +126,7 @@ function task10Func(paths) {
  * than task11Func should return "Callback result = THIS IS THE RESULT"
  */
 
-function task11Func (cb) {
-	return `Callback result = ${cb()}`;
-}
+// enter your code here
 
 /**
  * Level - Normal
@@ -165,12 +142,7 @@ function task11Func (cb) {
  * Note: use rest parameter and use it to get first param value
  */
 
-function task12Func(...rest) {
-	return {
-		paramsNumber: rest.length,
-		firstParam: rest[0]
-	};
-}
+// enter your code here
 
 /**
  * Level - Normal
@@ -179,10 +151,8 @@ function task12Func(...rest) {
  * @example
  * task13Func(5) // => gooooogle
  */
-function task13Func(n) {
-	let letter = "o";
-	return ("g" + letter.repeat(n) + "gle");
-}
+
+// enter your code here
 
 /**
  * Level - Hardcore
@@ -199,14 +169,10 @@ const task14Object = {
 	age: 25,
 	friend: 'wolf',
 	keys() {
-		//write your code here
-		for(const key in task14Object) {
-			console.log(key);
-		}
+		// enter your code here
 	},
 	call() {
-		//write your code here
-		return "My name is "+ task14Object.name +" "+ task14Object.lastName +" and I am "+ task14Object.age +" years old. My best friend is "+ task14Object.friend;
+		// enter your code here
 	}
 
 };
@@ -218,23 +184,15 @@ const task14Object = {
  * considering the Price and the Discount Percentage
  * hint: you need to use the Closure here
  * JS Closures: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
- * @param {percentage} num
- * @param {amount} num
  * @example
  * const discount10 = discountFunction(10);
  * console.log(discount10(90)); // 81
  * console.log(discount10(100)); // 90
  */
 
-// function task14Func(discountPercentage) {
-// 	return function (amount) {
-//
-// 	};
-// }
+function task14Func(discountPercentage) {
+	return function (amount) {
 
-function task15Func(percentage) {
-	return function (price) {
-		return price - price*(percentage/100);
 	};
 }
 

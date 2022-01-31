@@ -17,15 +17,14 @@ const {
  * Create a promiseResolve function which will return promise resolved with string value "Resolved!"
  */
 
-const promiseResolve = () => new Promise(res => res('Resolved!'));
-
+// enter your code here
 /**
  * Level - Easy
  * Task - 2
  * Create a promiseReject function which will return promise rejected with string value "Rejected!"
  */
 
-const promiseReject = () => new Promise((_, rej) => rej('Rejected!'));
+// enter your code here
 
 /**
  * Level - Easy
@@ -35,9 +34,7 @@ const promiseReject = () => new Promise((_, rej) => rej('Rejected!'));
  * Should reject when param === false with "Rejected!" string
  */
 
-function fullPromise(param) {
-	return new Promise((res, rej) => param ? res('Resolved!') : rej('Rejected!'));
-}
+// enter your code here
 
 /**
  * Level - Easy
@@ -49,8 +46,8 @@ function fullPromise(param) {
  * so final result should look 'Promise1 was resolved successfully'
  * NOTE: Use `then` functions
  */
-let task4Func = () => promise1()
-	.then(res => res + ' was resolved successfully');
+
+// enter your code here
 
 /**
  * Level - Normal
@@ -60,12 +57,8 @@ let task4Func = () => promise1()
  * `${promise1Result} and ${promise2Result} - successfully resolved`
  * NOTE: Use `then` functions
  */
-let task5Func = () => {
-	return promise1()
-		.then(res => promise2()
-			.then(res2 => `${res} and ${res2} - successfully resolved`))
-}
 
+// enter your code here
 
 /**
  * Level - Normal
@@ -77,9 +70,19 @@ let task5Func = () => {
  * task6Func() -> ["Promise1", "Promise2"]
  */
 
-async function task6Func() {
-	return Promise.all([promise1(), promise2()])
-}
+// enter your code here
+
+/**
+ * Hardcore tasks from codewars.com:
+ *
+ * https://www.codewars.com/kata/5b61d6ef07a266d40b000097
+ * https://www.codewars.com/kata/58d014421c694f71630000bc
+ * https://www.codewars.com/kata/587593285448632b8d000143
+ * https://www.codewars.com/kata/5a353a478f27f244a1000076
+ *
+ * Additional Tasks to Master Promises:
+ * https://github.com/lighthouse-labs/promises-exercises
+ */
 
 module.exports = {
 	promiseResolve,

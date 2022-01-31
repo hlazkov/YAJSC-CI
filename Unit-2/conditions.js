@@ -19,11 +19,7 @@
 const x1 = 87;
 let task1;
 
-if (x1 > 100) {
-    task1 = "Greater than 100";
-} else {
-    task1 = "Less than or equal 100";
-}
+// enter your code here
 
 /**
  * Level - Easy
@@ -37,13 +33,7 @@ if (x1 > 100) {
 const x2 = 49;
 let task2;
 
-if (x2 >= 50) {
-    task2 = "Greater than or equal to 50";
-} else if (x2 < 50 && x2 >-50) {
-    task2 = "In range between -50 to 50";
-} else {
-    task2 = "Less than -50";
-}
+// enter your code here
 
 /**
  * Level - Easy
@@ -56,11 +46,7 @@ let task3;
 const x3 = 3;
 const y3 = 7;
 
-if (y3 < 10) {
-    task3 = x3 + y3;
-} else {
-    task3 = x3 * y3;
-}
+// enter your code here
 
 /**
  * Level - Normal
@@ -73,8 +59,7 @@ if (y3 < 10) {
  */
 let task4;
 
-(y3<10) ? (task4=x3 + y3) : (task5 = x3 * y3);
-
+// enter your code here
 
 /**
  * Level - Easy
@@ -95,20 +80,7 @@ const num1 = 3;
 const num2 = 7;
 const operator = "add";
 
-switch (operator) {
-    case "add":
-        task5 = num1 + num2;
-        break;
-    case "subtract":
-        task5 = num1 - num2;
-        break;
-    case "multiply":
-        task5 = num1 * num2;
-        break;
-    case "divide":
-        task5 = num1 / num2;
-        break;
-}
+// enter your code here
 
 /**
  * Level - Normal
@@ -125,17 +97,7 @@ const productPrice = 49;
 let discount;
 let task6;
 
-if (productPrice >= 1000) {
-    discount = 0.3;
-} else if (productPrice < 1000 && productPrice > 0) {
-    discount = 0.2;
-} else if (productPrice < 0) {
-    discount = null;
-} else {
-    discount = undefined;
-}
-task6 = discount;
-
+// enter your code here
 
 
 /**
@@ -153,10 +115,7 @@ task6 = discount;
 const totalPrice = 420;
 let task7;
 
-if (0 <= totalPrice && totalPrice <=350 ) task7 = 0
-else if (351 <=totalPrice && totalPrice <= 1350) task7 = 15
-else if (1351 <=totalPrice && totalPrice <= 2700) task7 = 30
-else if (2701 <=totalPrice && totalPrice <= 6500) task7 = 45
+// enter your code here
 
 /**
  * Hardcore tasks from codewars.com:

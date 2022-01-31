@@ -10,7 +10,7 @@
  * Create a task1Func which will return second item from an array
  */
 let task1Func  = (arr) => {
-	return arr[2];
+	// enter your code here
 }
 
 /**
@@ -19,7 +19,7 @@ let task1Func  = (arr) => {
  * Create a task2Func which will add 1 item to a passed array (e.g. "new item")
  */
 let task2Func = (arr) => {
-	arr.push("new item");
+	// enter your code here
 }
 
 /**
@@ -29,7 +29,7 @@ let task2Func = (arr) => {
  * and return array containing elements from array1 and array2
  */
 let task3Func = (arr1, arr2) => {
-	return arr1.concat(arr2);
+	// enter your code here
 }
 
 /**
@@ -39,7 +39,7 @@ let task3Func = (arr1, arr2) => {
  * return new array with specified length and filled in with specified value
  */
 let task4Func = (length, value) => {
-	return new Array(length).fill(value);
+	// enter your code here
 }
 
 /**
@@ -51,15 +51,7 @@ let task4Func = (length, value) => {
  * don't use any cycles
  */
 let task5Func = (arr) => {
-	let res = 0;
-	arr.forEach(el => {
-		if(el.name === "Jack") {
-			res += 1;
-		} else if (el.age < 30) {
-			res += 1;
-		}
-	});
-	return res;
+	// enter your code here
 }
 
 /**
@@ -71,7 +63,7 @@ let task5Func = (arr) => {
  * return new array of all people who are older than 30
  */
 let task6Func = (arr) => {
-	return arr.filter(el => el.age > 30);
+	// enter your code here
 }
 
 /**
@@ -90,25 +82,7 @@ let task6Func = (arr) => {
  * "adult" from 22 and greater
  */
 let task7Func = (arr) => {
-	return arr.map(el => {
-		let maturity;
-		if (el.age <= 1) {
-			maturity = "baby";
-		} else if (el.age <= 3) {
-			maturity = "toddler";
-		} else if (el.age <= 5) {
-			maturity = "preschooler";
-		} else if (el.age <= 12) {
-			maturity = "gradeschooler";
-		} else if (el.age <= 18) {
-			maturity = "teen";
-		} else if (el.age <= 21) {
-			maturity = "young adult";
-		} else {
-			maturity = "adult";
-		}
-		return {...el, maturity};
-	});
+	// enter your code here
 }
 
 /**
@@ -120,7 +94,7 @@ let task7Func = (arr) => {
  * Note: try different approaches (e.g. using forEach or using Math object and its function)
  */
 let task8Func = (arr) => {
-	return arr.indexOf(Math.min(...arr));
+	// enter your code here
 }
 
 /**
@@ -130,7 +104,7 @@ let task8Func = (arr) => {
  * valid means not null/undefined
  */
 let task9Func = (arr) => {
-	return arr.filter(el => el !== null && el !== undefined).length;
+	// enter your code here
 }
 
 /**
@@ -142,14 +116,7 @@ let task9Func = (arr) => {
  */
 
 let task10Func = (arr) => {
-	let invalid = 0;
-	return arr.filter(el => {
-		if (el === null || el === undefined) {
-			invalid += 1;
-			if (invalid > 3) {throw 'The data needs to be reviewed'}
-		}
-		return el !== null && el !== undefined;
-	});
+	// enter your code here
 }
 
 /**

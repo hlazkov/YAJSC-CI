@@ -15,23 +15,14 @@
  * 2) constructor should get numberOfPoints and name
  * 3) method getDescription - 'This is a ${name} with ${numberOfPoints} points'
  */
-//put your code here
-class Figure {
-    name;
-    numberOfPoints;
-    constructor(name, numberOfPoints) {
-        this.name = name;
-        this.numberOfPoints = numberOfPoints;
-    }
-    getDescription() { return `This is a ${this.name} with ${this.numberOfPoints} points`; }
-}
+// enter your code here
 
 /**
  * Level - Easy
  * Task - 1 - Part 2
  * Create an instance of a class Figure
  */
-let figure = new Figure('TEST', 5);
+let figure; // enter your code here
 
 /**
  * Level - Easy
@@ -41,23 +32,14 @@ let figure = new Figure('TEST', 5);
  * 2) constructor should additionally get sideLength and calculate figureArea
  * 3) getter method getArea that returns property figureArea
  */
-//put your code here
-class Square extends Figure {
-    sideLength; figureArea;
-    constructor(name, sideLength) {
-        super(name, 4);
-        this.sideLength = sideLength;
-        this.figureArea = sideLength*sideLength;
-    }
-    get area() { return this.figureArea; }
-}
+// enter your code here
 
 /**
  * Level - Easy
  * Task - 2 - Part 2
  * Create an instance of a class Square
  */
-let square = new Square('TEST', 5);
+let square; // enter your code here
 
 /**
  * Additional tasks from codewars.com:

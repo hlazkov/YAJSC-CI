@@ -21,24 +21,13 @@
 let task1For = 0, task1while = 0, task1Do = 0;
 
 // Task - 1: "for" algorithm
-
-for(let i = 0; i <= 10; i++) {
-  task1For += i;
-}
+// enter your code here
 
 // Task - 1: "while" algorithm
-let whileI = 0;
-while (whileI <=10) {
-  task1while += whileI;
-  whileI++;
-}
+// enter your code here
 
 // Task - 1: "do..while" algorithm
-let whileDo = 0;
-do {
-  task1Do += whileDo;
-  whileDo++;
-} while (whileDo <=10)
+// enter your code here
 
 /**
  * Level - Easy
@@ -53,9 +42,7 @@ const task2x = -238;
 const task2y = 320;
 let task2Res = 0;
 
-for(let i = task2x; i <= task2y; i++) {
-  task2Res += i;
-}
+// enter your code here
 
 /**
  * Level - Easy
@@ -71,9 +58,7 @@ for(let i = task2x; i <= task2y; i++) {
 const task3Array = ["A", "B", "C", "D", "E", "F", "G", "H", "I"]; // => "ABCDEFGHI"
 let task3Res = '';
 
-for (let i of task3Array) {
-  task3Res += i;
-}
+// enter your code here
 
 /**
  * Level - Easy
@@ -91,9 +76,7 @@ const task4personIncomes = {
   depositIncome: 281,
 };
 
-for (let k in task4personIncomes) {
-  task4TotalIncome += task4personIncomes[k];
-}
+// enter your code here
 
 /**
  * Level - Normal
@@ -107,23 +90,13 @@ let task5ForFactorial = 1, task5WhileFactorial = 1, task5DoFactorial = 1;
 const task5n = 10; //10! = 3628800
 
 // Task - 5: "for" algorithm
-for (let i = 1; i <=task5n; i++) {
-  task5ForFactorial *= i;
-}
+// enter your code here
 
 // Task - 5: "while" algorithm
-let iWhile = 1;
-while (iWhile <= task5n) {
-  task5WhileFactorial *= iWhile;
-  iWhile++;
-}
+// enter your code here
 
 // Task - 5: "do" algorithm
-let iDo = 1;
-do {
-  task5DoFactorial *= iDo;
-  iDo++;
-} while (iDo <= task5n)
+// enter your code here
 
 /**
  * Level - Normal
@@ -136,9 +109,7 @@ do {
 const task6Array = ["A", "B", "C", "D", "E", "F", "G", "H", "I"]; // => "BDFH"
 let task6Res = '';
 
-for (let i = 1; i < task6Array.length; i = i+2) {
-  task6Res = task6Res + task6Array[i];
-}
+// enter your code here
 
 /**
  * Level - Normal
@@ -153,9 +124,7 @@ for (let i = 1; i < task6Array.length; i = i+2) {
 const task7Array = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]; // => "IGECA"
 let task7Res = '';
 
-for (let i = task7Array.length-1; i >= 0 ; i = i-2) {
-  task7Res = task7Res + task7Array[i];
-}
+// enter your code here
 
 /**
  * Hardcore tasks from codewars.com:
