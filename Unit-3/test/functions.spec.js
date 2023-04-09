@@ -31,7 +31,7 @@ describe('Unit 3 - Easy - Functions:', () => {
 	describe('Task 2 - function expression returns age', () => {
 		it('Verifying task2Func function returns true', () => {
 			const year = 1990;
-			expect(task2Func(year)).to.equal(2022 - year);
+			expect(task2Func(year)).to.equal(new Date().getFullYear() - year);
 		});
 		it('Verifying task2Func function is implemented using "function expression"', () => {
 			expect(removeLinesAndSpaces(task2Func.toString())).to.contain('function(');
@@ -96,7 +96,7 @@ describe('Unit 3 - Easy - Functions:', () => {
 	describe('Task 8 - odd or even', () => {
 		const n = getRandomNum();
 		it(`Verifying task8Func function returns correct value for number= ${n}`, () => {
-			expect(task8Func(n)).to.deep.equal(!n%2);
+			expect(task8Func(n)).to.deep.equal(!!(n%2));
 		});
 	});
 
@@ -153,7 +153,7 @@ describe('Unit 3 - Hardcore - Functions:', () => {
 		});
 
 		it('Verifying task14Object can return the string', () => {
-			expect(task14Object.call()).to.equal("My name is "+ task14Object.name +" "+ task14Object.lastName +" and I am "+ task14Object.age +" years old. My best friend is "+ task14Object.friend);
+			expect(task14Object.call()).to.equal("My name is "+ task14Object.name +" "+ task14Object.lastName +" and I am "+ task14Object.age +" years old. My best friend is a "+ task14Object.friend);
 		});
 	});
 

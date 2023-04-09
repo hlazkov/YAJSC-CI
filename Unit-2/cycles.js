@@ -12,7 +12,7 @@
 /**
  * Level - Easy
  * Task - 1
- * Implement algorithm which will calculate sum of numbers from 0 to 10
+ * Implement algorithm which will calculate sum of numbers from 0 to 10 (included)
  * Use 3 different cycles: for | while | do..while
  * Please store the result in correspondent variables:
  * task1For, task1while, task1Do
@@ -53,6 +53,7 @@ let task2Res = 0;
  * Please store the result in task3Res variable
  * hint: to get an array length you can use "length" property
  * (i.e. task3Array.length is equal 9)
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length
  */
 
 const task3Array = ["A", "B", "C", "D", "E", "F", "G", "H", "I"]; // => "ABCDEFGHI"
@@ -104,6 +105,7 @@ const task5n = 10; //10! = 3628800
  * Implement algorithm which will
  * make a string of every second letter from an array of letters
  * Please store the result in task6Res variable
+ * hint: you can use loops with numbers to access elements in array
  */
 
 const task6Array = ["A", "B", "C", "D", "E", "F", "G", "H", "I"]; // => "BDFH"
@@ -127,6 +129,20 @@ let task7Res = '';
 // enter your code here
 
 /**
+ * Level - Normal
+ * Task - 7
+ * Implement algorithm that will
+ * use in an array of numbers and returns the sum of all the even numbers in the given array.
+ * Please store the result in task8Res variable
+ * NOTE: use a `for` loop to iterate over the array and check if each number is even
+ */
+
+const task8Array = [2, 7, 15, 1, 0, 100200]; // => "IGECA"
+let task8Res = 0;
+
+// enter your code here
+
+/**
  * Hardcore tasks from codewars.com:
  *
  * https://www.codewars.com/kata/59fb783bab11f89202001083
@@ -142,5 +158,5 @@ module.exports = {
   task4personIncomes, task4TotalIncome,
   task5n, task5ForFactorial, task5WhileFactorial, task5DoFactorial,
   task6Array, task6Res,
-  task7Array, task7Res
+  task7Array, task7Res, task8Array, task8Res
 };

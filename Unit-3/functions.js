@@ -18,12 +18,11 @@
 
 // enter your code here
 
-
 /**
  * Level - Easy
  * Task - 2
  * create a variable task2Func which will return a function
- * which will take year of birth as a parameter and returns calculated age assuming current year is 2022
+ * which will take year of birth as a parameter and returns calculated age based on current year
  * use function expression
  */
 
@@ -64,7 +63,7 @@
  * Task - 6
  * Create a function task6Func which will get an object
  * e.g. {firstName: "Jack", lastName: "London"}
- * and returns a string firstName and lastName separated by space
+ * and returns a string firstName plus lastName, separated by space
  */
 
 // enter your code here
@@ -98,7 +97,7 @@
 /**
  * Level - Easy
  * Task - 9
- * Create a function task9Func which returns shortest of the words in the given array
+ * Create a function task9Func which returns the first shortest of the words in the given array
  * @example
  * task9Func(["ten", "two", "four"]) // => ten
  */
@@ -190,9 +189,9 @@ const task14Object = {
  * console.log(discount10(100)); // 90
  */
 
-function task14Func(discountPercentage) {
+function task15Func(discountPercentage) {
 	return function (amount) {
-
+		// enter your code here
 	};
 }
 

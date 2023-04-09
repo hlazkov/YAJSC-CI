@@ -41,6 +41,18 @@ describe('Unit 2 - Easy - Conditions:', () => {
       verifyTask3_4(conditions.task3);
     });
   });
+
+  describe('Task 9 - Logical NOT', () => {
+    it('Verifying task9 variable', () => {
+      expect(conditions.task9, 'task9 value is not correct').to.equal(!conditions.someVar);
+    });
+  });
+
+  describe('Task 10 - Logical operators', () => {
+    it('Verifying task10 variable', () => {
+      expect(conditions.task10, 'task10 value is not correct').to.equal(true);
+    });
+  });
 });
 
 describe('Unit 2 - Normal - Conditions:', () => {
@@ -80,10 +92,29 @@ describe('Unit 2 - Normal - Conditions:', () => {
   describe('Task 7 - totalPrice discount', () => {
     it('Verifying task7 variable', () => {
       const ex = expect(conditions.task7);
-      if (conditions.totalPrice - 351 < 0) ex.to.equal(0);
-      else if (conditions.totalPrice - 1351 < 0) ex.to.equal(15);
-      else if (conditions.totalPrice - 2701 < 0) ex.to.equal(30);
-      else if (conditions.totalPrice - 6501 < 0) ex.to.equal(45);
+      if (conditions.totalPrice - 351 < 0) ex.to.equal(conditions.totalPrice);
+      else if (conditions.totalPrice - 1351 < 0) ex.to.equal(conditions.totalPrice*0.15);
+      else if (conditions.totalPrice - 2701 < 0) ex.to.equal(conditions.totalPrice*0.30);
+      else if (conditions.totalPrice - 6501 < 0) ex.to.equal(conditions.totalPrice*0.45);
+    });
+  });
+
+  describe('Task 8 - x1 > 100', () => {
+    it('Verifying task1 variable', () => {
+      if (conditions.x1 > 100) {
+        expect(conditions.task8).to.equal("Greater than 100");
+      } else if (conditions.x1 <= 100) {
+        expect(conditions.task8).to.equal("Less than or equal 100");
+      } else {
+        throw new Error('x1 is wrong');
+      }
+    });
+  });
+
+  describe('Task 11 - Combination of logical operators', () => {
+    it('Verifying task11 variable', () => {
+        const expRes = (conditions.a > 5 && conditions.b > 5) || (conditions.a <= 5 && conditions.b <= 5);
+        expect(conditions.task11, "task11 value is not correct").to.equal(expRes);
     });
   });
 });

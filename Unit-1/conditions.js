@@ -42,6 +42,7 @@ let task2;
  * when y3 is less than 10 - task3 is equal to sum of x3 and y3
  * when y3 is greater or equal than 10 - task3 is equal multiplication of x3 and y3
  */
+
 let task3;
 const x3 = 3;
 const y3 = 7;
@@ -54,15 +55,16 @@ const y3 = 7;
  * Implement the same logic as in Task:3
  * assign result to task4 variable
  * but use ternary operator instead of if-else
- * NOTE: x3 and y3 are used from Task:
+ * NOTE: x3 and y3 are used from Task3
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
  */
+
 let task4;
 
 // enter your code here
 
 /**
- * Level - Easy
+ * Level - Easy:
  * Task - 5
  * You have 2 numbers ("num1" and "num2") and an "operator".
  * "operator" can equal to - "add" or "subtract" or "multiply" or "divide".
@@ -72,9 +74,10 @@ let task4;
  * Assign result to task5 variable
  *
  * Level - Normal:
- * Try to implement the same logic using "switch-case"
+ * If you have finished "Level - Easy" try to implement the same logic using "switch-case"
  * Hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
  */
+
 let task5;
 const num1 = 3;
 const num2 = 7;
@@ -91,6 +94,8 @@ const operator = "add";
  * if productPrice is less than 0 - discount should be equal null
  * otherwise - discount should be equal undefined
  * assign the discount to task6 variable
+ * NOTE: this task is just for a learning purposes, 
+ * it's better not to mess the types which a variable can have 
  */
 
 const productPrice = 49;
@@ -99,22 +104,72 @@ let task6;
 
 // enter your code here
 
-
 /**
  * Level - Normal
  * Task - 7
  * Write the logic that will calculate the amount of discount
  * considering the 'totalPrice' amount
  * Rules are the following:
- * - 0    - 350:  0
- * - 351  - 1350: 15
- * - 1351 - 2700: 30
- * - 2701 - 6500: 45
+ * | Total Price       | Discount in %
+ * | from 0    to  350 |   0%
+ * | from 351  to 1350 |  15%
+ * | from 1351 to 2700 |  30%
+ * | from 2701 to 6500 |  45%
  * assign the result to the 'task7' variable
  */
 const totalPrice = 420;
 let task7;
 
+// enter your code here
+
+/**
+ * Level - Normal
+ * Task - 8
+ * Implement the same condition for x1 variable (as in Task - 1), but use if statement without else
+ * if x1 is greater than 100 - task8 variable should be equal "Greater than 100"
+ * if x1 is smaller or equal 100 - task8 variable 1 should be equal "Less than or equal 100"
+ * NB: Your code should not contain `else` statement
+ */
+
+let task8;
+// modify and enter your code here
+
+/**
+ * Level - Easy
+ * Task - 9
+ * Assign task9 a value which is oposite to someVar
+ * NB: Use logical NOT to do the task
+ */
+
+let task9;
+const someVar = false
+// modify and enter your code here
+
+/**
+ * Level - Easy
+ * Task - 10
+ * Modify the code below to make task10 equal true
+ * NB: Use logical operator to do the task
+ */
+
+let task10;
+const someVar2 = true;
+// uncomment and modify code below
+// task10 = someVar {remove this curly braces and enter correct code} someVar2;
+
+/**
+ * Level - Normal
+ * Task - 11
+ * Modify the code below to make task11 equal
+ * true if both numbers are greater than 5, or if both numbers are less than or equal to 5
+ * NB: Use combination of logical operators to do the task
+ * Some dummy code to show the idea:
+ * task11 = (a > b || b < 10) && true;
+ */
+
+const a = 10;
+const b = 4;
+let task11; 
 // enter your code here
 
 /**
@@ -137,5 +192,6 @@ module.exports = {
     task4,
     num1, num2, operator, task5,
     productPrice, discount, task6,
-    totalPrice, task7
+    totalPrice, task7, task8, someVar, task9,
+    someVar2, task10, a, b, task11
 };

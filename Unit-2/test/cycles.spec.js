@@ -84,5 +84,17 @@ describe('Unit 2 - Normal - Cycles:', () => {
             }
             expect(cycles.task7Res).to.equal(res);
         });
-    })
+    });
+
+    describe('Task 8 - Calculate sum of even numbers', () => {
+        it('Verifying task8Res variable', () => {
+            let res = 0;
+            for (let i = 0; i < cycles.task8Array.length; i++) {
+                if (cycles.task8Array[i] % 2 === 0) {
+                    res += cycles.task8Array[i];
+                }
+              }
+            expect(cycles.task8Res).to.equal(res);
+        });
+    });
 });
