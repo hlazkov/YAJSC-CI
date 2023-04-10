@@ -1,4 +1,6 @@
-# yet_another_js_course
+## I'll be a JS Guru!
+
+# yet _another_js_course
 JS for QA/AQA course materials
 
 ## Requirements
