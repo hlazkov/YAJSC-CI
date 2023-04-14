@@ -14,21 +14,21 @@
  * Create "var" variable named myNum and set its value equal to 74
  */
 
-// enter your code here
+var myNum = 74;
 
 /**
  * Level - Easy
  * Create "let" variable named myText and set its value equal to "Jack"
  */
 
-// enter your code here
+let myText = "Jack";
 
 /**
  * Level - Easy
  * Create "const" variable named myBool and set its value equal to false
  */
 
-// enter your code here
+const myBool = false;
 
 ///
 /// ----- Starting from here I'd recommend to use let (or const if applicable) variables
@@ -39,35 +39,35 @@
  * Create variable named myNull and set its value equal to null
  */
 
-// enter your code here
+myNull = null;
 
 /**
  * Level - Easy
  * Create variable named myUndefined and set its value equal to undefined
  */
 
-// enter your code here
+let myUndefined = undefined;
 
 /**
  * Level - Easy
  * Create variable named myArr and set its value to be an array of numbers from 2 to 7
  */
 
-// enter your code here
+let myArr = [2,3,4,5,6,7];
 
 /**
  * Level - Easy
  * Create variable named myArr1 and set its value to be an empty array
  */
 
-// enter your code here
+let myArr1 = [];
 
 /**
  * Level - Normal
  * Make first array element to be equal to 'I am the first'
  */
 
-let myArr1_1 = [];
+let myArr1_1 = ["I am the first"];
 // enter your code here
 
 /**
@@ -76,7 +76,7 @@ let myArr1_1 = [];
  * NOTE: use `new Array` syntax
  */
 
-// enter your code here
+let myArr2 = new Array();
 
 /**
  * Level - Normal
@@ -85,7 +85,8 @@ let myArr1_1 = [];
  * NOTE: use `new Array` syntax
  */
 
-// enter your code here
+let myArr3 = new Array (3);
+console.log(myArr3.length)
 
 /**
  * Level - Normal
@@ -98,7 +99,7 @@ let myArr1_1 = [];
  * NOTE: use `new Array` syntax
  */
 
-// enter your code here
+let myArr4 = new Array(10, null, "I'm the third one", false);
 
 /**
  * Level - Easy
@@ -106,7 +107,9 @@ let myArr1_1 = [];
  * NOTE: you should use myArr variable here
  */
 
-// enter your code here
+let fourthElement = myArr[3];
+console.log("myArr=", myArr);
+console.log("myArr[3]=", myArr[3]);
 
 /**
  * Level - Easy
@@ -114,7 +117,7 @@ let myArr1_1 = [];
  * NOTE: you should use myArr variable here
  */
 
-// enter your code here
+let arrayOperations = myArr[3] - myArr[2];
 
 /**
  * Level - Easy
@@ -122,7 +125,7 @@ let myArr1_1 = [];
  * NOTE: you should use myNum variable here
  */
 
-// enter your code here
+let myNum2 = myNum / 2;
 
 /**
  * Level - Easy
@@ -130,14 +133,15 @@ let myArr1_1 = [];
  * NOTE: Use myText and myNum2 variables to solve it. Result should be something like "George is 21"
  */
 
-// enter your code here
+let myText2 = myText + " is " + myNum2;
+console.log(myText2);
 
 /**
  * Level - Normal
  * Create variable named myBool2 and set its value to be equality comparison (not strict) of myNum and myNum2 variables
  */
 
-// enter your code here
+let myBool2 = (myNum == myNum2);
 
 /**
  * Level - Normal
@@ -145,27 +149,28 @@ let myArr1_1 = [];
  * NOTE: string should be used
  */
 
-// enter your code here
+let myBool3 = (myNum2 === "37");
 
 /**
  * Create variable named myUndefined2 and set its value equal to without "undefined" word usage
  */
 
-// enter your code here
+let myUndefined2;
 
 /**
  * Level - Easy
  * Create variable named myObj and set its value as object with key firstName and value "John"
  */
 
-// enter your code here
+let myObj = {firstName: "John"};
 
 /**
  * Level - Easy
  * Set new key/property to myObj object named lastName with value "Dou"
  */
 
-// enter your code here
+myObj.lastName = "Dou";
+console.log(myObj);
 
 /**
  * Level - Easy
@@ -173,7 +178,8 @@ let myArr1_1 = [];
  * NOTE: you should use myObj in this task
  */
 
-// enter your code here
+myObj.fullName = myObj.firstName + " " + myObj.lastName;
+console.log(myObj.fullName);
 
 module.exports = {
     myNum, myText, myBool, myNull, myUndefined,
