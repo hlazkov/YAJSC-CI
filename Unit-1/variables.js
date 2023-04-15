@@ -39,7 +39,7 @@ const myBool = false;
  * Create variable named myNull and set its value equal to null
  */
 
-myNull = null;
+let myNull = null;
 
 /**
  * Level - Easy
@@ -67,8 +67,9 @@ let myArr1 = [];
  * Make first array element to be equal to 'I am the first'
  */
 
-let myArr1_1 = ["I am the first"];
-// enter your code here
+let myArr1_1 = [];
+myArr1_1[0] = "I am the first";
+console.log(myArr1_1)
 
 /**
  * Level - Normal
