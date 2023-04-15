@@ -19,11 +19,7 @@
 const x1 = 87;
 let task1;
 
-if (x1 > 100) {
-    task1 = "Greater than 100";
-} else {
-    task1 = "Less than or equal 100";
-}
+// enter your code here
 
 /**
  * Level - Easy
@@ -37,13 +33,7 @@ if (x1 > 100) {
 const x2 = 49;
 let task2;
 
-if (x2 >= 50) {
-    task2 = "Greater than or equal to 50";
-} else if (x2 > -50) {
-    task2 = "In range between -50 to 50";
-} else {
-    task2 = "Less than -50";
-}
+// enter your code here
 
 /**
  * Level - Easy
@@ -57,11 +47,7 @@ let task3;
 const x3 = 3;
 const y3 = 7;
 
-if (y3 < 10) {
-    task3 = x3 + y3;
-} else {
-    task3 = x3 * y3;
-}
+// enter your code here
 
 /**
  * Level - Normal
@@ -75,7 +61,7 @@ if (y3 < 10) {
 
 let task4;
 
-task4 = y3 < 10 ? x3 + y3 : x3 * y3;
+// enter your code here
 
 /**
  * Level - Easy:
@@ -97,37 +83,7 @@ const num1 = 3;
 const num2 = 7;
 const operator = "add";
 
-if (operator === "add") {
-    task5 = num1 + num2;
-} else if (operator === "subtract") {
-    task5 = num1 - num2;
-} else if (operator === "multiply") {
-    task5 = num1 * num2;
-} else if (operator === "divide") {
-    task5 = num1 / num2;
-} else {
-    console.log("Unknown operator");
-}
-
-// switch case variant
-
-switch (operator) {
-    case "add":
-        task5 = num1 + num2;
-        break;
-    case "subtract":
-        task5 = num1 - num2;
-        break;
-    case "multiply":
-        task5 = num1 * num2;
-        break;
-    case "divide":
-        task5 = num1 / num2;
-        break;
-    default:
-        console.log("Unknown operator");
-        break;
-}
+// enter your code here
 
 /**
  * Level - Normal
@@ -146,17 +102,7 @@ const productPrice = 49;
 let discount;
 let task6;
 
-if (productPrice >= 1000) {
-    discount = 0.3;
-} else if (0 < productPrice < 1000) {
-    discount = 0.2;
-} else if (productPrice < 0) {
-    discount = null;
-} else {
-    discount = undefined;
-}
-
-task6 = discount;
+// enter your code here
 
 /**
  * Level - Normal
@@ -174,22 +120,7 @@ task6 = discount;
 const totalPrice = 420;
 let task7;
 
-// not sure why this condition does not work: if (0 <= totalPrice <= 350) returns 0 and the one below works fine
-if (totalPrice <= 350) {
-    task7 = totalPrice * 0;
-    console.log("0%")
-} else if (351 <= totalPrice <= 1350) {
-    task7 = totalPrice * 0.15;
-    console.log("15%")
-} else if (1351 <= totalPrice <= 2700) {
-    task7 = totalPrice * 0.30;
-} else if (2701 <= totalPrice <= 6500) {
-    task7 = totalPrice * 0.45;
-} else {
-    console.log("discount is not set");
-}
-
-console.log(task7);
+// enter your code here
 
 /**
  * Level - Normal
@@ -201,8 +132,7 @@ console.log(task7);
  */
 
 let task8;
-
-task8 = x1 > 100 ? task8 = "Greater than 100" : task8 = "Less than or equal 100";
+// modify and enter your code here
 
 /**
  * Level - Easy
@@ -213,8 +143,7 @@ task8 = x1 > 100 ? task8 = "Greater than 100" : task8 = "Less than or equal 100"
 
 let task9;
 const someVar = false
-task9 = !someVar;
-console.log("task9 = " + task9);
+// modify and enter your code here
 
 /**
  * Level - Easy
@@ -226,7 +155,7 @@ console.log("task9 = " + task9);
 let task10;
 const someVar2 = true;
 // uncomment and modify code below
-task10 = someVar || someVar2;
+// task10 = someVar {remove this curly braces and enter correct code} someVar2;
 
 /**
  * Level - Normal
@@ -241,9 +170,7 @@ task10 = someVar || someVar2;
 const a = 10;
 const b = 4;
 let task11; 
-
-task11 = (b > 5 && a > 5) || (a <= 5 && b <= 5) && true;
-
+// enter your code here
 
 /**
  * Hardcore tasks from codewars.com:
