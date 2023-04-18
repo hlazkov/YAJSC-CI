@@ -174,7 +174,8 @@ task6 = discount;
 const totalPrice = 420;
 let task7;
 
-// not sure why this condition does not work: if (0 <= totalPrice <= 350) returns 0 and the one below works fine
+// not sure why this condition does not work: |if (0 <= totalPrice <= 350) returns 0 
+// and the one below works fine
 if (totalPrice <= 350) {
     task7 = totalPrice * 0;
     console.log("0%")
@@ -242,7 +243,7 @@ const a = 10;
 const b = 4;
 let task11; 
 
-task11 = (b > 5 && a > 5) || (a <= 5 && b <= 5) && true;
+task11 = (b > 5 && a > 5) || (a <= 5 && b <= 5);
 
 
 /**
