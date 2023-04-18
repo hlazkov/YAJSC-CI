@@ -174,17 +174,15 @@ task6 = discount;
 const totalPrice = 420;
 let task7;
 
-// not sure why this condition does not work: |if (0 <= totalPrice <= 350) returns 0 
-// and the one below works fine
-if (totalPrice <= 350) {
+if (totalPrice <= 350 && totalPrice <= 0) {
     task7 = totalPrice * 0;
     console.log("0%")
-} else if (351 <= totalPrice <= 1350) {
+} else if (totalPrice <= 1350 && 351 <= totalPrice) {
     task7 = totalPrice * 0.15;
     console.log("15%")
-} else if (1351 <= totalPrice <= 2700) {
+} else if (1351 <= totalPrice && totalPrice <= 2700) {
     task7 = totalPrice * 0.30;
-} else if (2701 <= totalPrice <= 6500) {
+} else if (2701 <= totalPrice && totalPrice <= 6500) {
     task7 = totalPrice * 0.45;
 } else {
     console.log("discount is not set");
