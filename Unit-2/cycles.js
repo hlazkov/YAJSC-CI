@@ -152,11 +152,12 @@ do {
 const task6Array = ["A", "B", "C", "D", "E", "F", "G", "H", "I"]; // => "BDFH"
 let task6Res = '';
 
-for (let r=0; r < task6Array.length; r=r+2) {
-  console.log("r="+r);
-  console.log("task6Res[r]"+task6Res[r]);
-  task6Res = task6Res + task6Res[r];
-  //console.log("task6Res="+task6Res);
+for (let r=0; r < task6Array.length; r++) {
+  if (r % 2 != 0) {
+    console.log("r="+r);
+    console.log("task6Array[r]="+task6Array[r]);
+    task6Res = task6Res + task6Array[r];
+  }
 }
 
 console.log("task6Res="+task6Res);
