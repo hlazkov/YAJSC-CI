@@ -184,22 +184,30 @@ for (let s = task7Array.length-1; s >=0; s--) {
   }
 }
 
-console.log("task7Res="+task7Res);
-console.log(typeof(task7Res));
+//console.log("task7Res="+task7Res);
+//console.log(typeof(task7Res));
 
 /**
  * Level - Normal
- * Task - 7
+ * Task - 8
  * Implement algorithm that will
  * use in an array of numbers and returns the sum of all the even numbers in the given array.
  * Please store the result in task8Res variable
  * NOTE: use a `for` loop to iterate over the array and check if each number is even
  */
 
-const task8Array = [2, 7, 15, 1, 0, 100200]; // => "IGECA"
+const task8Array = [2, 7, 15, 1, 0, 100200]; // => "IGECA" - 100202?
 let task8Res = 0;
 
-// enter your code here
+for (let t = 0; t < task7Array.length; t++) {
+  console.log("t="+t);
+  if (task8Array[t] % 2 == 0) {
+    console.log("t="+t);
+    console.log("task8Array[t]="+task8Array[t]);
+    task8Res = task8Res + task8Array[t];
+    //console.log("task7Res="+task7Res);
+  }
+}
 
 /**
  * Hardcore tasks from codewars.com:
