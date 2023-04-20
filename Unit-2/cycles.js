@@ -154,13 +154,13 @@ let task6Res = '';
 
 for (let r=0; r < task6Array.length; r++) {
   if (r % 2 != 0) {
-    console.log("r="+r);
-    console.log("task6Array[r]="+task6Array[r]);
+    //console.log("r="+r);
+    //console.log("task6Array[r]="+task6Array[r]);
     task6Res = task6Res + task6Array[r];
   }
 }
 
-console.log("task6Res="+task6Res);
+//console.log("task6Res="+task6Res);
 
 /**
  * Level - Normal
@@ -175,7 +175,17 @@ console.log("task6Res="+task6Res);
 const task7Array = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]; // => "IGECA"
 let task7Res = '';
 
-// enter your code here
+for (let s = task7Array.length-1; s >=0; s--) {
+  if (s % 2 == 0) {
+    //console.log("s="+s);
+    //console.log("task7Array[s]="+task7Array[s]);
+    task7Res = task7Res + task7Array[s];
+    //console.log("task7Res="+task7Res);
+  }
+}
+
+console.log("task7Res="+task7Res);
+console.log(typeof(task7Res));
 
 /**
  * Level - Normal
