@@ -172,11 +172,11 @@ for (let r=0; r < task6Array.length; r++) {
  * NOTE: don't use array.reverse() method
  */
 
-const task7Array = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]; // => "IGECA"
+const task7Array = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]; // => "JHFDB"
 let task7Res = '';
 
 for (let s = task7Array.length-1; s >=0; s--) {
-  if (s % 2 == 0) {
+  if (s % 2 != 0) {
     //console.log("s="+s);
     //console.log("task7Array[s]="+task7Array[s]);
     task7Res = task7Res + task7Array[s];
@@ -196,14 +196,14 @@ for (let s = task7Array.length-1; s >=0; s--) {
  * NOTE: use a `for` loop to iterate over the array and check if each number is even
  */
 
-const task8Array = [2, 7, 15, 1, 0, 100200]; // => "IGECA" - 100202?
+const task8Array = [2, 7, 15, 1, 0, 100200]; // => 100202
 let task8Res = 0;
 
 for (let t = 0; t < task7Array.length; t++) {
-  console.log("t="+t);
+  //console.log("t="+t);
   if (task8Array[t] % 2 == 0) {
-    console.log("t="+t);
-    console.log("task8Array[t]="+task8Array[t]);
+    //console.log("t="+t);
+    //console.log("task8Array[t]="+task8Array[t]);
     task8Res = task8Res + task8Array[t];
     //console.log("task7Res="+task7Res);
   }
