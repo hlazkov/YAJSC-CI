@@ -22,7 +22,8 @@ let task1For = 0, task1while = 0, task1Do = 0;
 
 // Task - 1: "for" algorithm
 for (let i = 0; i<=10; i++) {
-  task1For = task1For + i;
+  //task1For = task1For + i;
+  task1For += i;
 }
 
 // console.log(task1For);
@@ -199,7 +200,7 @@ let task8Res = 0;
 
 for (let t = 0; t < task7Array.length; t++) {
   //console.log("t="+t);
-  if (task8Array[t] % 2 == 0) {
+  if (task8Array[t] % 2 === 0) {
     //console.log("t="+t);
     //console.log("task8Array[t]="+task8Array[t]);
     task8Res = task8Res + task8Array[t];
