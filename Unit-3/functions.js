@@ -16,7 +16,9 @@
  * use function definition (also called a function declaration, or function statement)
  */
 
-// enter your code here
+function task1Func () {
+	return true;
+}
 
 /**
  * Level - Easy
@@ -26,7 +28,7 @@
  * use function expression
  */
 
-// enter your code here
+let task2Func
 
 /**
  * Level - Easy
@@ -37,7 +39,7 @@
  * use function expression with arrow function notation
  */
 
-// enter your code here
+let task3Func
 
 /**
  * Level - Easy
@@ -47,7 +49,7 @@
  * NOTE: assume parameters are always numbers
  */
 
-// enter your code here
+let task4Func
 
 /**
  * Level - Easy
@@ -56,7 +58,7 @@
  * just make second parameter to have a default value equal 10
  */
 
-// enter your code here
+let task5Func
 
 /**
  * Level - Easy
@@ -66,7 +68,7 @@
  * and returns a string firstName plus lastName, separated by space
  */
 
-// enter your code here
+let task6Func
 
 /**
  * Level - Easy
@@ -82,7 +84,7 @@
  * }
  */
 
-// enter your code here
+let task7Func;
 
 /**
  * Level - Easy
@@ -92,7 +94,7 @@
  * Hint: think about a remainder of two numbers
  */
 
-// enter your code here
+let task8Func;
 
 /**
  * Level - Easy
@@ -102,7 +104,7 @@
  * task9Func(["ten", "two", "four"]) // => ten
  */
 
-// enter your code here
+let task9Func;
 
 /**
  * Level - Easy
@@ -112,7 +114,7 @@
  * e.g [{direction: "Kiyv - Krakow", distance: 879}, {direction: "Kiyv - Tokyo", distance: 8193}]
  */
 
-// enter your code here
+let task10Func;
 
 /**
  * Level - Easy
@@ -125,7 +127,7 @@
  * than task11Func should return "Callback result = THIS IS THE RESULT"
  */
 
-// enter your code here
+let task11Func;
 
 /**
  * Level - Normal
@@ -141,7 +143,7 @@
  * Note: use rest parameter and use it to get first param value
  */
 
-// enter your code here
+let task12Func;
 
 /**
  * Level - Normal
@@ -151,7 +153,7 @@
  * task13Func(5) // => gooooogle
  */
 
-// enter your code here
+let task13Func;
 
 /**
  * Level - Hardcore
