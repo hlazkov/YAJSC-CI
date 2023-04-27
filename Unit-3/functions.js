@@ -9,6 +9,8 @@
  * https://learn.javascript.ru/callbacks
  */
 
+const { should } = require("chai");
+
 /**
  * Level - Easy
  * Task - 1
@@ -28,7 +30,12 @@ function task1Func () {
  * use function expression
  */
 
-let task2Func
+let task2Func = function(dob_year) {
+	let age = (2023 - dob_year);
+	return age;
+}
+
+task2Func(1989);
 
 /**
  * Level - Easy
@@ -39,7 +46,23 @@ let task2Func
  * use function expression with arrow function notation
  */
 
-let task3Func
+let task3Func = (g) => {
+	let gender = g;
+	if (g === 1) {
+		gender = "My gender is woman";
+		return gender
+	} else if (g === 2) {
+		gender = "My gender is man";
+		return gender
+	} else if (g === 0) {
+		gender = "My gender is other"
+		return gender
+	}
+}
+
+//console.log(task3Func(1));
+//console.log(task3Func(2));
+//console.log(task3Func(0));
 
 /**
  * Level - Easy
@@ -49,7 +72,10 @@ let task3Func
  * NOTE: assume parameters are always numbers
  */
 
-let task4Func
+function task4Func (a, b) {
+	let sum = a + b;
+	return sum;
+}
 
 /**
  * Level - Easy
@@ -58,7 +84,10 @@ let task4Func
  * just make second parameter to have a default value equal 10
  */
 
-let task5Func
+function task5Func (a, b=10) {
+	let sum = a + b;
+	return sum;
+}
 
 /**
  * Level - Easy
@@ -68,7 +97,12 @@ let task5Func
  * and returns a string firstName plus lastName, separated by space
  */
 
-let task6Func
+function task6Func (obj) {
+	let fullname = obj.firstName + " " + obj.lastName;
+	return fullname
+}
+
+//task6Func({firstName: "Jack", lastName: "London"});
 
 /**
  * Level - Easy
@@ -84,7 +118,14 @@ let task6Func
  * }
  */
 
-let task7Func;
+function task7Func (firstName = "", lastName = "", age = 0) {
+	let obj = {
+		firstName: firstName,
+		lastName: lastName,
+		age: age
+	}
+	return obj;
+}
 
 /**
  * Level - Easy
@@ -94,7 +135,16 @@ let task7Func;
  * Hint: think about a remainder of two numbers
  */
 
-let task8Func;
+function task8Func (number) {
+	let isOdd;
+	if (number % 2 != 0) {
+		isOdd = true;
+		return isOdd;
+	} else {
+		isOdd = false;
+		return isOdd;
+	}
+}
 
 /**
  * Level - Easy
@@ -104,7 +154,23 @@ let task8Func;
  * task9Func(["ten", "two", "four"]) // => ten
  */
 
-let task9Func;
+function task9Func (arr) {
+	for (let n of arr) {
+		console.log("n = " + n)
+		let shorterst = n;
+		if (n.length < shorterst.length) {
+			console.log("n.length < shorterst.length TRUE : " + n.length + "<" + shorterst.length)
+			shorterst = n;
+			console.log("shortest = " + shorterst)
+		} else {
+			console.log("n.length < shorterst.length FALSE : " + n.length + "<" + shorterst.length)
+		}
+	}
+	console.log("final shortest = " + shorterst)
+	return shorterst;
+}
+
+task9Func(["ten", "two", "four", "x"]);
 
 /**
  * Level - Easy
