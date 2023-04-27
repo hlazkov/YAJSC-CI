@@ -155,18 +155,20 @@ function task8Func (number) {
  */
 
 function task9Func (arr) {
+	let shorterst = arr[0];
+	//console.log("Initial shortest is element " + arr[0]);
 	for (let n of arr) {
-		console.log("n = " + n)
-		let shorterst = n;
+		//console.log("n = " + n)
 		if (n.length < shorterst.length) {
-			console.log("n.length < shorterst.length TRUE : " + n.length + "<" + shorterst.length)
+			//console.log("n.length < shorterst.length : " + n.length + "<" + shorterst.length)
 			shorterst = n;
-			console.log("shortest = " + shorterst)
+			//console.log("shortest = " + shorterst)
 		} else {
-			console.log("n.length < shorterst.length FALSE : " + n.length + "<" + shorterst.length)
+			// I don't know what to put in here
+			//console.log("n.length >= shorterst.length : " + n.length + ">=" + shorterst.length)
 		}
 	}
-	console.log("final shortest = " + shorterst)
+	//console.log("final shortest = " + shorterst)
 	return shorterst;
 }
 
