@@ -172,7 +172,7 @@ function task9Func (arr) {
 	return shorterst;
 }
 
-task9Func(["ten", "two", "four", "x"]);
+//task9Func(["ten", "two", "four", "x"]);
 
 /**
  * Level - Easy
@@ -182,7 +182,16 @@ task9Func(["ten", "two", "four", "x"]);
  * e.g [{direction: "Kiyv - Krakow", distance: 879}, {direction: "Kiyv - Tokyo", distance: 8193}]
  */
 
-let task10Func;
+function task10Func (arr) {
+	let totalDistance = 0;
+	for (let n of arr) {
+		//console.log(n.distance);
+		totalDistance+=n.distance
+	}
+	return totalDistance;
+}
+
+//task10Func([{direction: "Kiyv - Krakow", distance: 879}, {direction: "Kiyv - Tokyo", distance: 8193}]);
 
 /**
  * Level - Easy
@@ -195,7 +204,19 @@ let task10Func;
  * than task11Func should return "Callback result = THIS IS THE RESULT"
  */
 
-let task11Func;
+// I HAVE NO IDEA WHY TEST PASS HERE
+function task11Func(callback) {
+	let result = "Callback result = " + callback();
+	console.log("result is " + result);
+	return result;
+}
+
+function callBackFunction(string) {
+	console.log(string);
+}
+
+callBackFunction("THIS IS THE RESULT");
+task11Func(callBackFunction);
 
 /**
  * Level - Normal
