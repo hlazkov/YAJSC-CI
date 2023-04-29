@@ -204,10 +204,10 @@ function task10Func (arr) {
  * than task11Func should return "Callback result = THIS IS THE RESULT"
  */
 
-// I HAVE NO IDEA WHY TEST PASS HERE
+// I HAVE NO IDEA WHY TEST PASSES HERE
 function task11Func(callback) {
 	let result = "Callback result = " + callback();
-	console.log("result is " + result);
+	//console.log("result is " + result);
 	return result;
 }
 
@@ -215,8 +215,8 @@ function callBackFunction(string) {
 	console.log(string);
 }
 
-callBackFunction("THIS IS THE RESULT");
-task11Func(callBackFunction);
+//callBackFunction("THIS IS THE RESULT");
+//task11Func(callBackFunction);
 
 /**
  * Level - Normal
@@ -232,7 +232,21 @@ task11Func(callBackFunction);
  * Note: use rest parameter and use it to get first param value
  */
 
-let task12Func;
+function task12Func (...args) {
+	let paramsNumber = 0;
+	for (let n of args) {
+		paramsNumber += 1
+		//console.log("paramsNumber = " + paramsNumber);
+	}
+	let obj = {
+		paramsNumber: paramsNumber,
+		firstParam: args[0]
+	}
+	//console.log(obj);
+	return obj;
+}
+
+//task12Func([1,2,3]);
 
 /**
  * Level - Normal
@@ -242,7 +256,16 @@ let task12Func;
  * task13Func(5) // => gooooogle
  */
 
-let task13Func;
+function task13Func (number) {
+	//console.log(number)
+	let numOfO = "o".repeat(number);
+	//console.log(numOfO);
+	let result = "g" + numOfO + "gle";
+	//console.log(result);
+	return result;
+}
+
+//task13Func(2);
 
 /**
  * Level - Hardcore
@@ -259,13 +282,21 @@ const task14Object = {
 	age: 25,
 	friend: 'wolf',
 	keys() {
-		// enter your code here
+		for (let n in task14Object) {
+			console.log (n);
+		}
 	},
 	call() {
-		// enter your code here
+		let str = "My name is " + this.name + " " + this.lastName + " and I am " + this.age + " years old. My best friend is a " + this.friend
+		return str;
 	}
-
 };
+
+for (let n in task14Object) {
+	console.log ("n = " + n);
+};
+
+task14Object.keys();
 
 /**
  * Level - Hardcore
@@ -282,7 +313,7 @@ const task14Object = {
 
 function task15Func(discountPercentage) {
 	return function (amount) {
-		// enter your code here
+		return amount - (amount * discountPercentage / 100);
 	};
 }
 
