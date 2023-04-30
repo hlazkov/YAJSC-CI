@@ -204,19 +204,19 @@ function task10Func (arr) {
  * than task11Func should return "Callback result = THIS IS THE RESULT"
  */
 
-// I HAVE NO IDEA WHY TEST PASSES HERE
-function task11Func(callback) {
-	let result = "Callback result = " + callback();
-	//console.log("result is " + result);
+function task11Func(f) {
+	let result = "Callback result = " + f();
+	//console.log("task11Func returns: " + result);
 	return result;
 }
 
-function callBackFunction(string) {
+function func (string) {
 	console.log(string);
+	//console.log(typeof(string));
+	//return string;
 }
-
-//callBackFunction("THIS IS THE RESULT");
-//task11Func(callBackFunction);
+//console.log(func("THIS IS THE RESULT"));
+//task11Func(func("THIS IS THE RESULT"));
 
 /**
  * Level - Normal
@@ -293,10 +293,10 @@ const task14Object = {
 };
 
 for (let n in task14Object) {
-	console.log ("n = " + n);
+	//console.log ("n = " + n);
 };
 
-task14Object.keys();
+//task14Object.keys();
 
 /**
  * Level - Hardcore

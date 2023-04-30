@@ -114,3 +114,50 @@ const myFunc6 = (p1, p2) => {
 }
 
 console.log(myFunc5(10, 5, myFunc6));
+
+// example of a callback
+function map(f, a) {
+    const result = new Array(a.length);
+    for (let i = 0; i < a.length; i++) {
+      result[i] = f(a[i]);
+    }
+    return result;
+  }
+  
+  const cube = function (x) {
+    return x * x * x;
+  };
+  
+  const numbers = [0, 1, 2, 5, 10];
+  console.log(map(cube, numbers)); // [0, 1, 8, 125, 1000]
+
+  // example of a recusion
+
+function loop(x) {
+// "x >= 10" is the exit condition (equivalent to "!(x < 10)")
+if (x >= 10) {
+    return;
+}
+// do stuff
+loop(x + 1); // the recursive call
+}
+loop(0);
+ 
+  
+// Closures
+// The following example shows nested functions:
+// Since the inner function forms a closure, you can call the outer function 
+// and specify arguments for both the outer and inner function:
+
+function addSquares(a, b) {
+function square(x) {
+    return x * x;
+}
+return square(a) + square(b);
+}
+
+console.log(addSquares(2, 3)); // 13
+console.log(addSquares(3, 4)); // 25
+console.log(addSquares(4, 5)); // 41
+
+
