@@ -31,8 +31,7 @@ function task1Func () {
  */
 
 let task2Func = function(dob_year) {
-	let age = (2023 - dob_year);
-	return age;
+	return 2023 - dob_year;
 }
 
 task2Func(1989);
@@ -47,7 +46,7 @@ task2Func(1989);
  */
 
 let task3Func = (g) => {
-	let gender = g;
+	let gender;
 	if (g === 1) {
 		gender = "My gender is woman";
 		return gender
@@ -163,9 +162,6 @@ function task9Func (arr) {
 			//console.log("n.length < shorterst.length : " + n.length + "<" + shorterst.length)
 			shorterst = n;
 			//console.log("shortest = " + shorterst)
-		} else {
-			// I don't know what to put in here
-			//console.log("n.length >= shorterst.length : " + n.length + ">=" + shorterst.length)
 		}
 	}
 	//console.log("final shortest = " + shorterst)
@@ -257,11 +253,12 @@ function task12Func (...args) {
  */
 
 function task13Func (number) {
-	//console.log(number)
-	let numOfO = "o".repeat(number);
-	//console.log(numOfO);
-	let result = "g" + numOfO + "gle";
-	//console.log(result);
+	let start = "g";
+	for (let i = 1; i <= number; i++) {
+		start = start + "o";
+		//console.log(start);
+	}
+	let result = start + "gle";
 	return result;
 }
 
