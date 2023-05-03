@@ -67,7 +67,21 @@ let task4Func = (str) => {
  * console.log(task5Func('google)) // 'elgoog'
  * console.log(task5Func(123)) // 'This is not a string!'
  */
-let task5Func;// enter your code here
+let task5Func = (str) => {
+  if (typeof(str) === 'string') {
+    let arr = str.split("");
+    //console.log(arr);
+    //console.log(arr.length);
+    let reversedStr = arr.reverse().join("");
+    //console.log(reversedStr);
+    return reversedStr;
+  } else if (typeof(str) === 'number' || typeof(str) === 'object' || typeof(str) === 'null') {
+    //console.log("str is type " + str);
+    return 'This is not a string!';
+  }
+}
+
+//console.log(task5Func("abcd"));
 
 /**
  * Level - Normal
