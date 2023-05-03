@@ -14,14 +14,14 @@
  * Task - 1
  * Create a task1Func which will verify if string str1 contains another string str2
  */
-let task1Func;// enter your code here
+let task1Func = (str1, str2) => str1.includes(str2);
 
 /**
  * Level - Easy
  * Task - 2
  * Create a task2Func which will return index of another str2 in a str1
  */
-let task2Func;// enter your code here
+let task2Func = (str1, str2) => str1.search(str2);
 
 /**
  * Level - Easy
@@ -29,7 +29,14 @@ let task2Func;// enter your code here
  * Create a task3Func which will return a string replacing its part
  * with "Ah-a-ha-ha. Changing a part of the string" string
  */
-let task3Func;// enter your code here
+let task3Func = (str1, str2) => {
+  if (str1.includes(str2)) {
+    return str1.replace(str2, "Ah-a-ha-ha. Changing a part of the string");
+  } else {
+    return str1;
+  }
+  
+}
 
 /**
  * Level - Easy
@@ -37,7 +44,20 @@ let task3Func;// enter your code here
  * Create a task4Func which will remove unnecessary space at the beginning and end of the string
  * if result will be an empty string should return 'STRING IS EMPTY'
  */
-let task4Func;// enter your code here
+let task4Func = (str) => {
+  str1 = str.trim()
+  if (str1.length > 0) {
+    //console.log("1) str is " + str1);
+    return str1;
+  } else if (str1.length === 0) {
+    //console.log("2) str is " + str1);
+    //console.log(str1.length);
+    return 'STRING IS EMPTY';
+  } else if (str1 === "") {
+    //console.log("3) str is " + str1);
+    return 'STRING IS EMPTY';
+  }
+}
 
 /**
  * Level - Normal
