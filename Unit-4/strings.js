@@ -94,7 +94,24 @@ let task5Func = (str) => {
  * console.log(task6Func(601)) // 6
  * console.log(task6Func(21)) // 1
  */
-let task6Func;// enter your code here
+let task6Func = (year) => {
+  console.log(year.toString());
+  let yearToStr = year.toString();
+  //console.log(typeof(yearToStr));
+  if (yearToStr.length === 2) {
+    return 1
+  } else if (yearToStr.length === 3) {
+    let century = yearToStr.slice(0,1);
+    console.log("year is " + year);
+    console.log("century is " + century);
+    return century;
+  } else if (yearToStr.length === 4) {
+    let century = yearToStr.slice(0,2);
+    console.log("year is " + year);
+    console.log("century is " + century);
+    return century
+  }
+}
 
 /**
  * Level - Normal
@@ -108,7 +125,21 @@ let task6Func;// enter your code here
  * console.log(strCount('', 'z')) // 0
  * NOTE: don't use for loops
  */
-let task7Func;// enter your code here
+let task7Func = (str, letter) => {
+  if (str === "") {
+    return 0
+  } else {
+    let strL = str.toLowerCase();
+    //console.log("strL is " + strL);
+    let letterL = letter.toLowerCase();
+    //console.log("letterL is " + letterL);
+    let reg = new RegExp (letterL, 'g');
+    let result = strL.match(reg).length;
+    return result;
+  }
+}
+
+//task7Func("Google", "o");
 
 /**
  * Level - Normal
