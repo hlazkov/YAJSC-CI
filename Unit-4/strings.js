@@ -94,6 +94,8 @@ let task5Func = (str) => {
  * console.log(task6Func(601)) // 6
  * console.log(task6Func(21)) // 1
  */
+
+// NEED A HIT HERE, I'M STUCK
 let task6Func = (year) => {
   console.log(year.toString());
   let yearToStr = year.toString();
@@ -125,6 +127,7 @@ let task6Func = (year) => {
  * console.log(strCount('', 'z')) // 0
  * NOTE: don't use for loops
  */
+
 let task7Func = (str, letter) => {
   if (str === "") {
     return 0
@@ -149,7 +152,13 @@ let task7Func = (str, letter) => {
  * @example
  * console.log(replaceConfidential("MR.[Johns] was responsible for ...")) // => "MR.[----] was responsible for ..."
  */
-let task8Func;// enter your code here
+// I USED CHATGPT TO CREATE A REGEXP BECAUSE I DON'T GET IT
+let task8Func = (str) => {
+  let reg = new RegExp(/\[[^\]]+\]/gm)
+  let result = str.replaceAll(reg, "[----]");
+  console.log(result);
+  return result;
+}
 
 /**
  * Level - Normal
