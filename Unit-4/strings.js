@@ -95,7 +95,7 @@ let task5Func = (str) => {
  * console.log(task6Func(21)) // 1
  */
 
-// NEED A HIT HERE, I'M STUCK
+// I NEED A HINT HERE, I'M STUCK
 let task6Func = (year) => {
   console.log(year.toString());
   let yearToStr = year.toString();
@@ -172,7 +172,17 @@ let task8Func = (str) => {
  * console.log(truncateString('The story begins long-long ago.', 6)) // 'TThe st...'
  * console.log(truncateString('Hello', 6)) // 'Hello'
  */
-let task9Func;// enter your code here
+let task9Func = (str, maxLength) => {
+  if (str.length > maxLength) {
+    console.log("str is " + str);
+    console.log("maxLength is " + maxLength);
+    let newStr = str.slice(0, maxLength) + "..."
+    console.log("newStr is " + newStr);
+    return newStr;
+  } else {
+    return str;
+  }
+}
 
 /**
  * Hardcore tasks from codewars.com:
