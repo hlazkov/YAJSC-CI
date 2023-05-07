@@ -123,7 +123,31 @@ let task6Func = (arr) => {
  * "adult" from 22 and greater
  */
 let task7Func = (arr) => {
-	// enter your code here
+	let newArr = new Array;
+	for (let i=0; i < arr.length; i++) {
+		let maturity;
+		let element = arr[i];
+		if (element.age <=1) {
+			maturity = "baby";
+		} else if (element.age >=2 && element.age <= 3) {
+			maturity = "toddler";
+		} else if (element.age >=4 && element.age <= 5) {
+			maturity = "preschooler";
+		} else if (element.age >=6 && element.age <= 12) {
+			maturity = "gradeschooler";
+		} else if (element.age >=13 && element.age <= 18) {
+			maturity = "teen";
+		} else if (element.age >=19 && element.age <= 21) {
+			maturity = "young adult";
+		} else if (element.age >=22) {
+			maturity = "adult";
+		}
+		newEl = { name: element.name, age: element.age, maturity: maturity };
+		//console.log(newEl);
+		newArr.push(newEl);
+
+	}
+	return newArr;
 }
 
 /**
