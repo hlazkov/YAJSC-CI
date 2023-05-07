@@ -10,7 +10,9 @@
  * Create a task1Func which will return second item from an array
  */
 let task1Func  = (arr) => {
-	// enter your code here
+	//console.log(arr);
+	//console.log(arr[2]);
+	return arr[2];
 }
 
 /**
@@ -19,8 +21,11 @@ let task1Func  = (arr) => {
  * Create a task2Func which will add 1 item to a passed array (e.g. "new item")
  */
 let task2Func = (arr) => {
-	// enter your code here
+	return console.log(arr.push("new item"));
 }
+//const arr = [1,2,3]
+//task2Func(arr);
+//console.log(arr);
 
 /**
  * Level - Easy
@@ -29,7 +34,7 @@ let task2Func = (arr) => {
  * and return array containing elements from array1 and array2
  */
 let task3Func = (arr1, arr2) => {
-	// enter your code here
+	return arr1.concat(arr2);
 }
 
 /**
@@ -39,8 +44,12 @@ let task3Func = (arr1, arr2) => {
  * return new array with specified length and filled in with specified value
  */
 let task4Func = (length, value) => {
-	// enter your code here
+	const arr = new Array(length);
+	//console.log(arr.fill(value));
+	return arr.fill(value)
 }
+
+//task4Func(5, "a"); // [ 'a', 'a', 'a', 'a', 'a' ]
 
 /**
  * Level - Easy
@@ -50,9 +59,32 @@ let task4Func = (length, value) => {
  * and returns a number of people whose name is "Jack" or age is lower than 30
  * don't use any cycles
  */
-let task5Func = (arr) => {
-	// enter your code here
+
+function isYoungOrJack (arr) {
+	let num = 0;
+	for (let el=0; el < arr.length; el++) {
+		//console.log("el = " + el);
+		//console.log("el.name = " + el.name);
+		//console.log(arr[el].name);
+		console.log(arr[el].name.includes("Jack"));
+		console.log(arr[el].age < 30);
+		if ((arr[el].name.includes("Jack") || arr[el].age < 30)) {
+			console.log((arr[el].name.includes("Jack") || arr[el].age < 30));
+			console.log(num = num + 1);
+			num = num + 1;
+		}
+	}
+	console.log(num);
+	return num;
 }
+
+//isYoungOrJack([{name: "Jane Dou", age: 45}, {name: "Peter Parker", age: 18}, {name: "Jack Dou", age: 45}]);
+
+let task5Func = (arr) => {
+	
+}
+
+//task5Func([{name: "Jane Dou", age: 45}, {name: "Peter Parker", age: 18}]);
 
 /**
  * Level - Easy
@@ -63,7 +95,16 @@ let task5Func = (arr) => {
  * return new array of all people who are older than 30
  */
 let task6Func = (arr) => {
-	// enter your code here
+	let newArr = [];
+	arr.find((el) => {
+		//console.log(el);
+		//console.log(el.age > 30);
+		if ((el.age > 30) === true) {
+			newArr.push(el);
+		}
+	});
+	//console.log(newArr);
+	return newArr;
 }
 
 /**
