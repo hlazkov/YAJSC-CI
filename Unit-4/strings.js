@@ -21,12 +21,12 @@ let task1Func = (str1, str2) => str1.includes(str2);
  * Task - 2
  * Create a task2Func which will return index of another str2 in a str1
  */
+
+// 1st initial option using search method 
 //let task2Func = (str1, str2) => str1.search(str2);
 
 // another option with using indexOf
-let task2Func = (str1, str2) => {
-
-}
+let task2Func = (str1, str2) => str1.indexOf(str2);
 
 /**
  * Level - Easy
