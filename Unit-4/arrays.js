@@ -193,6 +193,8 @@ let task10Func = (arr) => {
 	arr.forEach(element => {
 		if (element !== null && element !== undefined) {
 			newArr.push(element);
+		} else {
+			numInv = numInv+1;
 		}
 	});
 	if (numInv > 3) {
