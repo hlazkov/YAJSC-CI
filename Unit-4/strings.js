@@ -53,9 +53,6 @@ let task4Func = (str) => {
     //console.log("2) str is " + str1);
     //console.log(str1.length);
     return 'STRING IS EMPTY';
-  } else if (str1 === "") {
-    //console.log("3) str is " + str1);
-    return 'STRING IS EMPTY';
   }
 }
 
@@ -75,7 +72,7 @@ let task5Func = (str) => {
     let reversedStr = arr.reverse().join("");
     //console.log(reversedStr);
     return reversedStr;
-  } else if (typeof(str) === 'number' || typeof(str) === 'object' || typeof(str) === 'null') {
+  } else if (typeof(str) != 'string') {
     //console.log("str is type " + str);
     return 'This is not a string!';
   }
@@ -134,9 +131,9 @@ let task7Func = (str, letter) => {
   } else {
     let strL = str.toLowerCase();
     //console.log("strL is " + strL);
-    let letterL = letter.toLowerCase();
+    let letterL = letter;
     //console.log("letterL is " + letterL);
-    let reg = new RegExp (letterL, 'g');
+    let reg = new RegExp (letterL, 'gi');
     let result = strL.match(reg).length;
     return result;
   }
