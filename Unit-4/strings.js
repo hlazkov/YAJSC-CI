@@ -21,7 +21,12 @@ let task1Func = (str1, str2) => str1.includes(str2);
  * Task - 2
  * Create a task2Func which will return index of another str2 in a str1
  */
-let task2Func = (str1, str2) => str1.search(str2);
+//let task2Func = (str1, str2) => str1.search(str2);
+
+// another option with using indexOf
+let task2Func = (str1, str2) => {
+
+}
 
 /**
  * Level - Easy
@@ -72,7 +77,7 @@ let task5Func = (str) => {
     let reversedStr = arr.reverse().join("");
     //console.log(reversedStr);
     return reversedStr;
-  } else if (typeof(str) != 'string') {
+  } else if (typeof(str) !== 'string') {
     //console.log("str is type " + str);
     return 'This is not a string!';
   }
@@ -92,23 +97,23 @@ let task5Func = (str) => {
  * console.log(task6Func(21)) // 1
  */
 
-// I NEED A HINT HERE, I'M STUCK
 let task6Func = (year) => {
-  console.log(year.toString());
+  //console.log(year.toString());
   let yearToStr = year.toString();
   //console.log(typeof(yearToStr));
-  if (yearToStr.length === 2) {
-    return 1
+  if (yearToStr.length <= 2) {
+    let century = 1;
+    return century;
   } else if (yearToStr.length === 3) {
     let century = yearToStr.slice(0,1);
-    console.log("year is " + year);
-    console.log("century is " + century);
-    return century;
+    //console.log("year is " + year);
+    //console.log("century is " + century);
+    return +century;
   } else if (yearToStr.length === 4) {
     let century = yearToStr.slice(0,2);
-    console.log("year is " + year);
-    console.log("century is " + century);
-    return century
+    //console.log("year is " + year);
+    //console.log("century is " + century);
+    return +century
   }
 }
 

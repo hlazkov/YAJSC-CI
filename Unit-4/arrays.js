@@ -171,7 +171,7 @@ let task9Func = (arr) => {
 	num = 0;
 	//console.log(arr);
 	for (let i=0; i < arr.length; i++) {
-		if (arr[i] != null && arr[i] != undefined) {
+		if (arr[i] !== null && arr[i] !== undefined) {
 			num = num + 1;
 		}
 	}
@@ -191,7 +191,7 @@ let task10Func = (arr) => {
 	let numInv = 0;
 	let newArr = [];
 	arr.forEach(element => {
-		if (element != null && element != undefined) {
+		if (element !== null && element !== undefined) {
 			newArr.push(element);
 		}
 	});
