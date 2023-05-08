@@ -60,28 +60,17 @@ let task4Func = (length, value) => {
  * don't use any cycles
  */
 
-function isYoungOrJack (arr) {
-	let num = 0;
-	for (let el=0; el < arr.length; el++) {
-		//console.log("el = " + el);
-		//console.log("el.name = " + el.name);
-		//console.log(arr[el].name);
-		console.log(arr[el].name.includes("Jack"));
-		console.log(arr[el].age < 30);
-		if ((arr[el].name.includes("Jack") || arr[el].age < 30)) {
-			console.log((arr[el].name.includes("Jack") || arr[el].age < 30));
-			console.log(num = num + 1);
-			num = num + 1;
-		}
-	}
-	console.log(num);
-	return num;
-}
-
-//isYoungOrJack([{name: "Jane Dou", age: 45}, {name: "Peter Parker", age: 18}, {name: "Jack Dou", age: 45}]);
-
+// expected 59, actual 61. Where am I wrong? Shouldn't I have used "if" here?
 let task5Func = (arr) => {
-	
+	let newArr = [];
+	arr.forEach(element => {
+		//console.log(element)
+		if (element.name.includes("Jack") || element.age < 30) {
+			newArr.push(element);
+		}
+	});
+	console.log(newArr);
+	return newArr.length;
 }
 
 //task5Func([{name: "Jane Dou", age: 45}, {name: "Peter Parker", age: 18}]);
@@ -159,8 +148,18 @@ let task7Func = (arr) => {
  * Note: try different approaches (e.g. using forEach or using Math object and its function)
  */
 let task8Func = (arr) => {
-	// enter your code here
+	//console.log(arr);
+	const min = Math.min(...arr);
+	//console.log(min);
+	return arr.indexOf(min);
 }
+
+// option with forEach TBD
+function minItem (arr) {
+		
+}
+
+minItem([2,5,6,3,1,8]);
 
 /**
  * Level - Normal
@@ -169,7 +168,15 @@ let task8Func = (arr) => {
  * valid means not null/undefined
  */
 let task9Func = (arr) => {
-	// enter your code here
+	num = 0;
+	//console.log(arr);
+	for (let i=0; i < arr.length; i++) {
+		if (arr[i] != null && arr[i] != undefined) {
+			num = num + 1;
+		}
+	}
+	//console.log(num);
+	return num;
 }
 
 /**
@@ -181,7 +188,17 @@ let task9Func = (arr) => {
  */
 
 let task10Func = (arr) => {
-	// enter your code here
+	let numInv = 0;
+	let newArr = [];
+	arr.forEach(element => {
+		if (element != null && element != undefined) {
+			newArr.push(element);
+		}
+	});
+	if (numInv > 3) {
+		throw new Error("The data needs to be reviewed");
+	}
+	return newArr;
 }
 
 /**
