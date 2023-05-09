@@ -60,18 +60,31 @@ let task4Func = (length, value) => {
  * don't use any cycles
  */
 
-// expected 59, actual 61. Where am I wrong? Shouldn't I have used "if" here?
+//ADDED 2ND OPTION WITH FILTER()
+
 let task5Func = (arr) => {
 	let newArr = [];
-	arr.forEach(element => {
+	arr.filter(element => {
 		//console.log(element)
 		if (element.name.includes("Jack") || element.age < 30) {
 			newArr.push(element);
 		}
 	});
-	console.log(newArr);
+	//console.log(newArr);
 	return newArr.length;
 }
+
+// let task5Func = (arr) => {
+// 	let newArr = [];
+// 	arr.forEach(element => {
+// 		//console.log(element)
+// 		if (element.name.includes("Jack") || element.age < 30) {
+// 			newArr.push(element);
+// 		}
+// 	});
+// 	console.log(newArr);
+// 	return newArr.length;
+// }
 
 //task5Func([{name: "Jane Dou", age: 45}, {name: "Peter Parker", age: 18}]);
 
@@ -83,18 +96,27 @@ let task5Func = (arr) => {
  * e.g. [{name: "Jane Dou", age: 45}, {name: "Peter Parker", age: 18}]
  * return new array of all people who are older than 30
  */
+
+// 2ND OPTION WITH FILTER()
 let task6Func = (arr) => {
 	let newArr = [];
-	arr.find((el) => {
-		//console.log(el);
-		//console.log(el.age > 30);
-		if ((el.age > 30) === true) {
-			newArr.push(el);
-		}
-	});
+	newArr = arr.filter((element) => element.age > 30);
 	//console.log(newArr);
 	return newArr;
 }
+
+// let task6Func = (arr) => {
+// 	let newArr = [];
+// 	arr.find((el) => {
+// 		//console.log(el);
+// 		//console.log(el.age > 30);
+// 		if ((el.age > 30) === true) {
+// 			newArr.push(el);
+// 		}
+// 	});
+// 	//console.log(newArr);
+// 	return newArr;
+// }
 
 /**
  * Level - Easy
@@ -147,19 +169,26 @@ let task7Func = (arr) => {
  * console.log(minItem([2,5,6,3,1,8])) // 4
  * Note: try different approaches (e.g. using forEach or using Math object and its function)
  */
+
+// 2ND OPTION WITH FOREACH
 let task8Func = (arr) => {
-	//console.log(arr);
-	const min = Math.min(...arr);
-	//console.log(min);
+	let min = 0;
+	arr.forEach(element => {
+		if (element < min) {
+			min = element;
+		}
+	})
 	return arr.indexOf(min);
 }
 
-// option with forEach TBD
-function minItem (arr) {
-		
-}
+// let task8Func = (arr) => {
+// 	//console.log(arr);
+// 	const min = Math.min(...arr);
+// 	//console.log(min);
+// 	return arr.indexOf(min);
+// }
 
-minItem([2,5,6,3,1,8]);
+task8Func([2,5,6,3,1,8]);
 
 /**
  * Level - Normal
