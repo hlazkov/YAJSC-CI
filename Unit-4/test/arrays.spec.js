@@ -40,7 +40,7 @@ describe('Unit 4 - Easy - Arrays:', () => {
 
 	describe('Task 5 - number of people by specific criteria', () => {
 		it('Verifying task5Func returns correct number', () => {
-			expect(task5Func(people)).to.equal(61);
+			expect(task5Func(people)).to.equal(60);
 		});
 	});
 

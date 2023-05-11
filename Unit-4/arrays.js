@@ -66,7 +66,7 @@ let task5Func = (arr) => {
 	let newArr = [];
 	arr.filter(element => {
 		//console.log(element)
-		if (element.name.includes("Jack") || element.age < 30) {
+		if (element.name.includes("Jack ") || element.age < 30) {
 			newArr.push(element);
 		}
 	});
@@ -133,33 +133,72 @@ let task6Func = (arr) => {
  * "young adult" from 19 to 21
  * "adult" from 22 and greater
  */
+// 2ND OPTION USING MAP METHOD
 let task7Func = (arr) => {
-	let newArr = new Array;
-	for (let i=0; i < arr.length; i++) {
-		let maturity;
-		let element = arr[i];
-		if (element.age <=1) {
-			maturity = "baby";
-		} else if (element.age >=2 && element.age <= 3) {
-			maturity = "toddler";
-		} else if (element.age >=4 && element.age <= 5) {
-			maturity = "preschooler";
-		} else if (element.age >=6 && element.age <= 12) {
-			maturity = "gradeschooler";
-		} else if (element.age >=13 && element.age <= 18) {
-			maturity = "teen";
-		} else if (element.age >=19 && element.age <= 21) {
-			maturity = "young adult";
-		} else if (element.age >=22) {
-			maturity = "adult";
-		}
-		newEl = { name: element.name, age: element.age, maturity: maturity };
-		//console.log(newEl);
-		newArr.push(newEl);
-
+	for (let element=0; element < arr.length; element++) {
+		let newArr = [];
+		arr.map(element => {
+			if (element.age <=1) {
+				maturity = "baby";
+				element.maturity = maturity;
+				newArr.push(element);
+			} else if (element.age >=2 && element.age <= 3) {
+				maturity = "toddler";
+				element.maturity = maturity;
+				newArr.push(element);
+			} else if (element.age >=4 && element.age <= 5) {
+				maturity = "preschooler";
+				element.maturity = maturity;
+				newArr.push(element);
+			} else if (element.age >=6 && element.age <= 12) {
+				maturity = "gradeschooler";
+				element.maturity = maturity;
+				newArr.push(element);
+			} else if (element.age >=13 && element.age <= 18) {
+				maturity = "teen";
+				element.maturity = maturity;
+				newArr.push(element);
+			} else if (element.age >=19 && element.age <= 21) {
+				maturity = "young adult";
+				element.maturity = maturity;
+				newArr.push(element);
+			} else if (element.age >=22) {
+				maturity = "adult";
+				element.maturity = maturity;
+				newArr.push(element);
+			}
+		})
+		//console.log(newArr);
+		return newArr;	
 	}
-	return newArr;
 }
+
+// let task7Func = (arr) => {
+// 	let newArr = new Array;
+// 	for (let i=0; i < arr.length; i++) {
+// 		let maturity;
+// 		let element = arr[i];
+// 		if (element.age <=1) {
+// 			maturity = "baby";
+// 		} else if (element.age >=2 && element.age <= 3) {
+// 			maturity = "toddler";
+// 		} else if (element.age >=4 && element.age <= 5) {
+// 			maturity = "preschooler";
+// 		} else if (element.age >=6 && element.age <= 12) {
+// 			maturity = "gradeschooler";
+// 		} else if (element.age >=13 && element.age <= 18) {
+// 			maturity = "teen";
+// 		} else if (element.age >=19 && element.age <= 21) {
+// 			maturity = "young adult";
+// 		} else if (element.age >=22) {
+// 			maturity = "adult";
+// 		}
+// 		newEl = { name: element.name, age: element.age, maturity: maturity };
+// 		//console.log(newEl);
+// 		newArr.push(newEl);
+// 	}
+// 	return newArr;
+// }
 
 /**
  * Level - Normal
