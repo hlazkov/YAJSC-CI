@@ -235,17 +235,32 @@ task8Func([2,5,6,3,1,8]);
  * Crete task9Func which will return number of valid entries of an array
  * valid means not null/undefined
  */
+
+// 2ND OPTION WITHOUT CYCLES
 let task9Func = (arr) => {
 	num = 0;
-	//console.log(arr);
-	for (let i=0; i < arr.length; i++) {
-		if (arr[i] !== null && arr[i] !== undefined) {
+	arr.forEach(element => {
+		if (element !== null && element !== undefined) {
 			num = num + 1;
 		}
-	}
-	//console.log(num);
+	})
 	return num;
 }
+	
+	
+
+
+// let task9Func = (arr) => {
+// 	num = 0;
+// 	//console.log(arr);
+// 	for (let i=0; i < arr.length; i++) {
+// 		if (arr[i] !== null && arr[i] !== undefined) {
+// 			num = num + 1;
+// 		}
+// 	}
+// 	//console.log(num);
+// 	return num;
+// }
 
 /**
  * Level - Normal
