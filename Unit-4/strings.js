@@ -14,14 +14,19 @@
  * Task - 1
  * Create a task1Func which will verify if string str1 contains another string str2
  */
-let task1Func;// enter your code here
+let task1Func = (str1, str2) => str1.includes(str2);
 
 /**
  * Level - Easy
  * Task - 2
  * Create a task2Func which will return index of another str2 in a str1
  */
-let task2Func;// enter your code here
+
+// 1st initial option using search method 
+//let task2Func = (str1, str2) => str1.search(str2);
+
+// another option with using indexOf
+let task2Func = (str1, str2) => str1.indexOf(str2);
 
 /**
  * Level - Easy
@@ -29,7 +34,14 @@ let task2Func;// enter your code here
  * Create a task3Func which will return a string replacing its part
  * with "Ah-a-ha-ha. Changing a part of the string" string
  */
-let task3Func;// enter your code here
+let task3Func = (str1, str2) => {
+  if (str1.includes(str2)) {
+    return str1.replace(str2, "Ah-a-ha-ha. Changing a part of the string");
+  } else {
+    return str1;
+  }
+  
+}
 
 /**
  * Level - Easy
@@ -37,7 +49,17 @@ let task3Func;// enter your code here
  * Create a task4Func which will remove unnecessary space at the beginning and end of the string
  * if result will be an empty string should return 'STRING IS EMPTY'
  */
-let task4Func;// enter your code here
+let task4Func = (str) => {
+  str1 = str.trim()
+  if (str1.length > 0) {
+    //console.log("1) str is " + str1);
+    return str1;
+  } else if (str1.length === 0) {
+    //console.log("2) str is " + str1);
+    //console.log(str1.length);
+    return 'STRING IS EMPTY';
+  }
+}
 
 /**
  * Level - Normal
@@ -47,7 +69,21 @@ let task4Func;// enter your code here
  * console.log(task5Func('google)) // 'elgoog'
  * console.log(task5Func(123)) // 'This is not a string!'
  */
-let task5Func;// enter your code here
+let task5Func = (str) => {
+  if (typeof(str) === 'string') {
+    let arr = str.split("");
+    //console.log(arr);
+    //console.log(arr.length);
+    let reversedStr = arr.reverse().join("");
+    //console.log(reversedStr);
+    return reversedStr;
+  } else if (typeof(str) !== 'string') {
+    //console.log("str is type " + str);
+    return 'This is not a string!';
+  }
+}
+
+//console.log(task5Func("abcd"));
 
 /**
  * Level - Normal
@@ -60,7 +96,26 @@ let task5Func;// enter your code here
  * console.log(task6Func(601)) // 6
  * console.log(task6Func(21)) // 1
  */
-let task6Func;// enter your code here
+
+let task6Func = (year) => {
+  //console.log(year.toString());
+  let yearToStr = year.toString();
+  //console.log(typeof(yearToStr));
+  if (yearToStr.length <= 2) {
+    let century = 1;
+    return century;
+  } else if (yearToStr.length === 3) {
+    let century = yearToStr.slice(0,1);
+    //console.log("year is " + year);
+    //console.log("century is " + century);
+    return +century;
+  } else if (yearToStr.length === 4) {
+    let century = yearToStr.slice(0,2);
+    //console.log("year is " + year);
+    //console.log("century is " + century);
+    return +century
+  }
+}
 
 /**
  * Level - Normal
@@ -74,7 +129,22 @@ let task6Func;// enter your code here
  * console.log(strCount('', 'z')) // 0
  * NOTE: don't use for loops
  */
-let task7Func;// enter your code here
+
+let task7Func = (str, letter) => {
+  if (str === "") {
+    return 0
+  } else {
+    let strL = str.toLowerCase();
+    //console.log("strL is " + strL);
+    let letterL = letter;
+    //console.log("letterL is " + letterL);
+    let reg = new RegExp (letterL, 'gi');
+    let result = strL.match(reg).length;
+    return result;
+  }
+}
+
+//task7Func("Google", "o");
 
 /**
  * Level - Normal
@@ -84,7 +154,13 @@ let task7Func;// enter your code here
  * @example
  * console.log(replaceConfidential("MR.[Johns] was responsible for ...")) // => "MR.[----] was responsible for ..."
  */
-let task8Func;// enter your code here
+// I USED CHATGPT TO CREATE A REGEXP BECAUSE I DON'T GET IT
+let task8Func = (str) => {
+  let reg = new RegExp(/\[[^\]]+\]/gm)
+  let result = str.replaceAll(reg, "[----]");
+  console.log(result);
+  return result;
+}
 
 /**
  * Level - Normal
@@ -98,7 +174,17 @@ let task8Func;// enter your code here
  * console.log(truncateString('The story begins long-long ago.', 6)) // 'TThe st...'
  * console.log(truncateString('Hello', 6)) // 'Hello'
  */
-let task9Func;// enter your code here
+let task9Func = (str, maxLength) => {
+  if (str.length > maxLength) {
+    console.log("str is " + str);
+    console.log("maxLength is " + maxLength);
+    let newStr = str.slice(0, maxLength) + "..."
+    console.log("newStr is " + newStr);
+    return newStr;
+  } else {
+    return str;
+  }
+}
 
 /**
  * Hardcore tasks from codewars.com:
