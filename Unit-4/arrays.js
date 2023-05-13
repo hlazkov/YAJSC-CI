@@ -211,15 +211,16 @@ let task7Func = (arr) => {
 
 // 2ND OPTION WITH FOREACH
 let task8Func = (arr) => {
-	let min = 0;
-	arr.forEach(element => {
+	let min = arr[0];
+	let minIndex;
+	arr.forEach((element, index) => {
 		if (element < min) {
 			min = element;
+			minIndex = index;
 		}
 	})
-	return arr.indexOf(min);
+	return minIndex;
 }
-
 // let task8Func = (arr) => {
 // 	//console.log(arr);
 // 	const min = Math.min(...arr);
