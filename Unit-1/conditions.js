@@ -21,6 +21,7 @@ let task1;
 
 // enter your code here
 
+
 /**
  * Level - Easy
  * Task - 2
@@ -35,6 +36,7 @@ let task2;
 
 // enter your code here
 
+
 /**
  * Level - Easy
  * Task - 3
@@ -46,7 +48,6 @@ let task2;
 let task3;
 const x3 = 3;
 const y3 = 7;
-
 // enter your code here
 
 /**
@@ -62,6 +63,7 @@ const y3 = 7;
 let task4;
 
 // enter your code here
+
 
 /**
  * Level - Easy:
@@ -94,8 +96,8 @@ const operator = "add";
  * if productPrice is less than 0 - discount should be equal null
  * otherwise - discount should be equal undefined
  * assign the discount to task6 variable
- * NOTE: this task is just for a learning purposes, 
- * it's better not to mess the types which a variable can have 
+ * NOTE: this task is just for a learning purposes,
+ * it's better not to mess the types which a variable can have
  */
 
 const productPrice = 49;
@@ -103,6 +105,7 @@ let discount;
 let task6;
 
 // enter your code here
+
 
 /**
  * Level - Normal
@@ -118,9 +121,9 @@ let task6;
  * assign the result to the 'task7' variable
  */
 const totalPrice = 420;
-let task7;
 
 // enter your code here
+let task7;
 
 /**
  * Level - Normal
@@ -131,8 +134,10 @@ let task7;
  * NB: Your code should not contain `else` statement
  */
 
-let task8;
+
+
 // modify and enter your code here
+let task8;
 
 /**
  * Level - Easy
@@ -141,9 +146,10 @@ let task8;
  * NB: Use logical NOT to do the task
  */
 
-let task9;
 const someVar = false
+let task9;
 // modify and enter your code here
+
 
 /**
  * Level - Easy
@@ -152,10 +158,11 @@ const someVar = false
  * NB: Use logical operator to do the task
  */
 
-let task10;
 const someVar2 = true;
+let task10;
 // uncomment and modify code below
 // task10 = someVar {remove this curly braces and enter correct code} someVar2;
+
 
 /**
  * Level - Normal
@@ -168,8 +175,8 @@ const someVar2 = true;
  */
 
 const a = 10;
-const b = 4;
-let task11; 
+const b = 4
+let task11;
 // enter your code here
 
 /**

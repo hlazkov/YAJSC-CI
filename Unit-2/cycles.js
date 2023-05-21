@@ -23,6 +23,7 @@ let task1For = 0, task1while = 0, task1Do = 0;
 // Task - 1: "for" algorithm
 // enter your code here
 
+
 // Task - 1: "while" algorithm
 // enter your code here
 
@@ -44,6 +45,7 @@ let task2Res = 0;
 
 // enter your code here
 
+
 /**
  * Level - Easy
  * Task - 3
@@ -60,6 +62,7 @@ const task3Array = ["A", "B", "C", "D", "E", "F", "G", "H", "I"]; // => "ABCDEFG
 let task3Res = '';
 
 // enter your code here
+
 
 /**
  * Level - Easy
@@ -79,6 +82,7 @@ const task4personIncomes = {
 
 // enter your code here
 
+
 /**
  * Level - Normal
  * Task - 5
@@ -92,6 +96,7 @@ const task5n = 10; //10! = 3628800
 
 // Task - 5: "for" algorithm
 // enter your code here
+
 
 // Task - 5: "while" algorithm
 // enter your code here
@@ -113,6 +118,7 @@ let task6Res = '';
 
 // enter your code here
 
+
 /**
  * Level - Normal
  * Task - 7
@@ -128,6 +134,7 @@ let task7Res = '';
 
 // enter your code here
 
+
 /**
  * Level - Normal
  * Task - 7
@@ -137,10 +144,11 @@ let task7Res = '';
  * NOTE: use a `for` loop to iterate over the array and check if each number is even
  */
 
-const task8Array = [2, 7, 15, 1, 0, 100200]; // => "IGECA"
+const task8Array = [2, 7, 15, 1, 0, 100200];
 let task8Res = 0;
 
 // enter your code here
+
 
 /**
  * Hardcore tasks from codewars.com:

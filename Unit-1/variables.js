@@ -64,10 +64,10 @@
 
 /**
  * Level - Normal
- * Make first array element to be equal to 'I am the first'
+ * Create variable named myArr1_1 and set its value to be an empty array
+ * make first arrray element to be equal to 'I am the first'
  */
 
-let myArr1_1 = [];
 // enter your code here
 
 /**
@@ -77,6 +77,7 @@ let myArr1_1 = [];
  */
 
 // enter your code here
+
 
 /**
  * Level - Normal
@@ -160,6 +161,7 @@ let myArr1_1 = [];
 
 // enter your code here
 
+
 /**
  * Level - Easy
  * Set new key/property to myObj object named lastName with value "Dou"
@@ -178,7 +180,7 @@ let myArr1_1 = [];
 module.exports = {
     myNum, myText, myBool, myNull, myUndefined,
     myArr, myArr1, myArr1_1, myArr2, myArr3, myArr4, fourthElement,
-    arrayOperations, myUndefined2, myNum2, myText2, 
+    arrayOperations, myUndefined2, myNum2, myText2,
     myBool2, myBool3,
     myObj
 };

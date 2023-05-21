@@ -28,6 +28,8 @@ let task2Func;// enter your code here
  * Task - 3
  * Create a task3Func which will return a string replacing its part
  * with "Ah-a-ha-ha. Changing a part of the string" string
+ * @example
+ * task3Func('tests', 'es') => 'tAh-a-ha-ha. Changing a part of the stringt'
  */
 let task3Func;// enter your code here
 

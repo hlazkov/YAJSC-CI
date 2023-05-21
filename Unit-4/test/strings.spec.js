@@ -36,8 +36,11 @@ describe('Unit 4 - Easy - Strings:', () => {
   });
 
   describe('Task 4 - remove spaces', () => {
-    it('Verifying task4Func result if string contains spaces', () => {
+    it('Verifying task4Func result if string contains spaces and one word', () => {
       expect(task4Func('  test ')).to.equal('test');
+    });
+    it('Verifying task2Func result if string contains spaces and several words', () => {
+      expect(task4Func(' test test  some text   ')).to.equal('test test  some text');
     });
     it('Verifying task2Func result if there are no spaces', () => {
       expect(task4Func('')).to.equal('STRING IS EMPTY');

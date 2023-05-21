@@ -18,6 +18,7 @@
 
 // enter your code here
 
+
 /**
  * Level - Easy
  * Task - 2
@@ -27,6 +28,7 @@
  */
 
 // enter your code here
+
 
 /**
  * Level - Easy
@@ -39,6 +41,7 @@
 
 // enter your code here
 
+
 /**
  * Level - Easy
  * Task - 4
@@ -49,6 +52,7 @@
 
 // enter your code here
 
+
 /**
  * Level - Easy
  * Task - 5
@@ -57,6 +61,7 @@
  */
 
 // enter your code here
+
 
 /**
  * Level - Easy
@@ -67,6 +72,7 @@
  */
 
 // enter your code here
+
 
 /**
  * Level - Easy
@@ -84,6 +90,7 @@
 
 // enter your code here
 
+
 /**
  * Level - Easy
  * Task - 8
@@ -93,6 +100,7 @@
  */
 
 // enter your code here
+
 
 /**
  * Level - Easy
@@ -104,6 +112,7 @@
 
 // enter your code here
 
+
 /**
  * Level - Easy
  * Task - 10
@@ -114,18 +123,31 @@
 
 // enter your code here
 
+
 /**
  * Level - Easy
  * Task - 11
  * Callback
- * Create a function task11Func which will take another function
+ * Create a function task11Func which will take another function as an argument
  * and returns result of execution of that another function in string format
+ * NOTE: you can use `someFunc1` or `someFunc2` for testing purposes
  * @example
- * if callBackFunction returns "THIS IS THE RESULT"
+ * if callBackFunction (e.g. `someFunc1`) returns "THIS IS THE RESULT"
  * than task11Func should return "Callback result = THIS IS THE RESULT"
  */
 
+// DO NOT DELETE below code
+const someFunc1 = () => {
+	return chance.sentence();
+}
+
+const someFunc2 = () => {
+	return 'blablball + 123';
+}
+
 // enter your code here
+
+
 
 /**
  * Level - Normal
@@ -143,6 +165,7 @@
 
 // enter your code here
 
+
 /**
  * Level - Normal
  * Task - 13
@@ -152,6 +175,7 @@
  */
 
 // enter your code here
+
 
 /**
  * Level - Hardcore
@@ -169,6 +193,7 @@ const task14Object = {
 	friend: 'wolf',
 	keys() {
 		// enter your code here
+
 	},
 	call() {
 		// enter your code here
