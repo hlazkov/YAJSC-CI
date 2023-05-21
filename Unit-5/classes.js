@@ -61,7 +61,7 @@ class Square extends Figure {
  * Task - 2 - Part 2
  * Create an instance of a class Square
  */
-let square = new Square();
+let square = new Square(5);
 console.log(square);
 
 /**

@@ -27,8 +27,8 @@ const person = {
  * NOTE: use Object assign method
  */
 function makeRobot(person) {
-	person.batteryLevel = 3;
 	let robot = Object.assign({}, person);
+	robot.batteryLevel = 3;
 	//console.log(robot);
 	return robot;
 }
@@ -46,15 +46,16 @@ function makeRobot(person) {
 // OPTION 1
 function isARobot (obj) {
 	console.log(obj);
-	if (obj.batteryLevel !== undefined) {
-		return true;
-	} else {
-		return false;
-	}
-}
+	return obj.hasOwnProperty('batteryLevel');
+// 	if (obj.batteryLevel !== undefined) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
 
 // OPTION 2
-// TBD
+// see above commented
 
 /**
  * Level - Normal
