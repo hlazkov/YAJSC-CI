@@ -10,7 +10,13 @@
  * Create an object 'person' with 'firstName' and 'lastName' properties
  * Object should contain 'getFullName' method that returns full name ('firstName lastName')
  */
-const person; // enter your code here
+const person = {
+	firstName: "John",
+	lastName: "Doe",
+	getFullName: function () {
+		return this.firstName + " " + this.lastName
+	}
+}
 
 /**
  * Level - Easy
@@ -21,8 +27,13 @@ const person; // enter your code here
  * NOTE: use Object assign method
  */
 function makeRobot(person) {
-	// enter your code here
+	let robot = Object.assign({}, person);
+	robot.batteryLevel = 3;
+	//console.log(robot);
+	return robot;
 }
+
+//makeRobot(person);
 
 /**
  * Level - Easy
@@ -31,9 +42,20 @@ function makeRobot(person) {
  * by checking if object has property (e.g. makeRobot)
  * try to find more than 1 way to do it
  */
+
+// OPTION 1
 function isARobot (obj) {
-	// enter your code here
-}
+	console.log(obj);
+	return obj.hasOwnProperty('batteryLevel');
+// 	if (obj.batteryLevel !== undefined) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+
+// OPTION 2
+// see above commented
 
 /**
  * Level - Normal
@@ -42,8 +64,20 @@ function isARobot (obj) {
  * get the list of object properties which values are Numbers
  */
 function task4Func (obj) {
-	// enter your code here
+	let arr = [];
+	//console.log(obj);
+	for (const property in obj){
+		//console.log(typeof obj[property]);
+		if (typeof obj[property] === "number") {
+			//console.log(true);
+			arr.push(property);
+			//console.log(arr);
+		}
+	}
+	return arr;
 }
+
+//task4Func({a: 1, b: 2});
 
 /**
  * Hardcore tasks from codewars.com:
