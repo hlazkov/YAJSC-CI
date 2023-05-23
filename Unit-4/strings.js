@@ -33,6 +33,8 @@ let task2Func = (str1, str2) => str1.indexOf(str2);
  * Task - 3
  * Create a task3Func which will return a string replacing its part
  * with "Ah-a-ha-ha. Changing a part of the string" string
+ * @example
+ * task3Func('tests', 'es') => 'tAh-a-ha-ha. Changing a part of the stringt'
  */
 let task3Func = (str1, str2) => {
   if (str1.includes(str2)) {

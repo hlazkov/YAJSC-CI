@@ -28,6 +28,7 @@ for (let i = 0; i<=10; i++) {
 
 // console.log(task1For);
 
+
 // Task - 1: "while" algorithm
 let j = 0;
 while (j<=10) {
@@ -67,6 +68,7 @@ for (let l=task2x; l<=task2y; l++) {
   // console.log("task2Res="+task2Res);
 }
 
+
 /**
  * Level - Easy
  * Task - 3
@@ -86,6 +88,7 @@ for (let m of task3Array) {
   task3Res = task3Res + m;
   //console.log(task3Res);
 }
+
 
 /**
  * Level - Easy
@@ -109,6 +112,7 @@ for (let key in task4personIncomes) {
   //console.log("task4TotalIncome="+task4TotalIncome);
 }
 
+
 /**
  * Level - Normal
  * Task - 5
@@ -125,6 +129,7 @@ for (let n=1; n <= task5n; n++) {
   task5ForFactorial = task5ForFactorial * n;
   //console.log("task5ForFactorial="+task5ForFactorial);
 }
+
 
 // Task - 5: "while" algorithm
 let o=1;
@@ -161,6 +166,7 @@ for (let r=1; r < task6Array.length;r=r+2) {
 
 //console.log("task6Res="+task6Res);
 
+
 /**
  * Level - Normal
  * Task - 7
@@ -186,6 +192,7 @@ for (let s = task7Array.length-1; s >=0; s--) {
 //console.log("task7Res="+task7Res);
 //console.log(typeof(task7Res));
 
+
 /**
  * Level - Normal
  * Task - 8
@@ -207,6 +214,7 @@ for (let t = 0; t < task7Array.length; t++) {
     //console.log("task7Res="+task7Res);
   }
 }
+
 
 /**
  * Hardcore tasks from codewars.com:

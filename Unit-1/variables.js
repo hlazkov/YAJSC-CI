@@ -64,12 +64,17 @@ let myArr1 = [];
 
 /**
  * Level - Normal
- * Make first array element to be equal to 'I am the first'
+ * Create variable named myArr1_1 and set its value to be an empty array
+ * make first arrray element to be equal to 'I am the first'
  */
 
+<<<<<<< HEAD
 let myArr1_1 = [];
 myArr1_1[0] = "I am the first";
 console.log(myArr1_1)
+=======
+// enter your code here
+>>>>>>> f0c36ffea7280d2cf337cf57b1a4ef690ce5965a
 
 /**
  * Level - Normal
@@ -78,6 +83,7 @@ console.log(myArr1_1)
  */
 
 let myArr2 = new Array();
+
 
 /**
  * Level - Normal
@@ -165,6 +171,7 @@ let myUndefined2;
 
 let myObj = {firstName: "John"};
 
+
 /**
  * Level - Easy
  * Set new key/property to myObj object named lastName with value "Dou"
@@ -185,7 +192,7 @@ console.log(myObj.fullName);
 module.exports = {
     myNum, myText, myBool, myNull, myUndefined,
     myArr, myArr1, myArr1_1, myArr2, myArr3, myArr4, fourthElement,
-    arrayOperations, myUndefined2, myNum2, myText2, 
+    arrayOperations, myUndefined2, myNum2, myText2,
     myBool2, myBool3,
     myObj
 };

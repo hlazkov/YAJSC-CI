@@ -25,6 +25,7 @@ if (x1 > 100) {
     task1 = "Less than or equal 100";
 }
 
+
 /**
  * Level - Easy
  * Task - 2
@@ -44,6 +45,7 @@ if (x2 >= 50) {
 } else {
     task2 = "Less than -50";
 }
+
 
 /**
  * Level - Easy
@@ -76,6 +78,7 @@ if (y3 < 10) {
 let task4;
 
 task4 = y3 < 10 ? x3 + y3 : x3 * y3;
+
 
 /**
  * Level - Easy:
@@ -138,8 +141,8 @@ switch (operator) {
  * if productPrice is less than 0 - discount should be equal null
  * otherwise - discount should be equal undefined
  * assign the discount to task6 variable
- * NOTE: this task is just for a learning purposes, 
- * it's better not to mess the types which a variable can have 
+ * NOTE: this task is just for a learning purposes,
+ * it's better not to mess the types which a variable can have
  */
 
 const productPrice = 49;
@@ -158,6 +161,7 @@ if (productPrice >= 1000) {
 
 task6 = discount;
 
+
 /**
  * Level - Normal
  * Task - 7
@@ -172,7 +176,6 @@ task6 = discount;
  * assign the result to the 'task7' variable
  */
 const totalPrice = 420;
-let task7;
 
 if (totalPrice <= 350 && totalPrice <= 0) {
     task7 = totalPrice * 0;
@@ -210,10 +213,10 @@ task8 = x1 > 100 ? task8 = "Greater than 100" : task8 = "Less than or equal 100"
  * NB: Use logical NOT to do the task
  */
 
-let task9;
 const someVar = false
 task9 = !someVar;
 console.log("task9 = " + task9);
+
 
 /**
  * Level - Easy
@@ -222,10 +225,11 @@ console.log("task9 = " + task9);
  * NB: Use logical operator to do the task
  */
 
-let task10;
 const someVar2 = true;
+let task10;
 // uncomment and modify code below
 task10 = someVar || someVar2;
+
 
 /**
  * Level - Normal

@@ -20,7 +20,7 @@ describe('Unit 4 - Easy - Arrays:', () => {
 	describe('Task 2 - add element to an array', () => {
 		it('Verifying task2Func returns correct value', () => {
 			const arr = [1, 2, 4];
-			expect(task1Func(arr)).to.deep.equal(4);
+			expect(task2Func(arr)).to.deep.equal(4);
 		});
 	});
 
@@ -40,7 +40,11 @@ describe('Unit 4 - Easy - Arrays:', () => {
 
 	describe('Task 5 - number of people by specific criteria', () => {
 		it('Verifying task5Func returns correct number', () => {
+<<<<<<< HEAD
 			expect(task5Func(people)).to.equal(60);
+=======
+			expect(task5Func(people)).to.equal(people.filter(el => el.name.split(' ').includes('Jack') || el.age < 30).length);
+>>>>>>> f0c36ffea7280d2cf337cf57b1a4ef690ce5965a
 		});
 	});
 
