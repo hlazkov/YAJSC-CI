@@ -33,7 +33,7 @@ console.log('Finish');
 
 // Start
 // Finish
-// My timeout - 5 sec
+// My timeout - 5 sec 
 // My timeout - 10 sec
 // My timeout - 2 sec
 // The end
