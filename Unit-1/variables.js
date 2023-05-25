@@ -68,13 +68,9 @@ let myArr1 = [];
  * make first arrray element to be equal to 'I am the first'
  */
 
-<<<<<<< HEAD
 let myArr1_1 = [];
 myArr1_1[0] = "I am the first";
 console.log(myArr1_1)
-=======
-// enter your code here
->>>>>>> f0c36ffea7280d2cf337cf57b1a4ef690ce5965a
 
 /**
  * Level - Normal
