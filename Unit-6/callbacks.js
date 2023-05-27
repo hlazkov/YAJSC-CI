@@ -124,11 +124,11 @@ countdown(3, someFunc);
 // enter your code below
 
 const delayedGreeting = (name, callback) => {
-    let resultOfTheAsyncFunc = `Hello ${name}`;
+    let resultOfTheAsyncFunc = `Hello ${name}!`;
     setTimeout(() => callback(resultOfTheAsyncFunc), 1000);
 };
 
-//delayedGreeting('Alice', someFuncWithParam);
+delayedGreeting('Alice', someFuncWithParam);
 
 
 /**
@@ -187,8 +187,23 @@ const greetWithDelay = (name, delay, callback) => {
 // enter your code below
 
 const countdown2 = (duration, callback) => {
-    
+  let counter = duration;
+  
+  function countdownHelper() {
+    console.log(counter);
+    counter--;
+
+    if (counter < 0) {
+      callback();
+    } else {
+      setTimeout(countdownHelper, 1000);
+    }
+  }
+
+  countdownHelper();
 }
+
+countdown2(10, someFunc);
 
 
 

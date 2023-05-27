@@ -6,3 +6,5 @@ const delayedGreeting = (name, callback) => {
 };
 
 delayedGreeting('Alice', someFuncWithParam);
+
+// node ./Unit-6/cb_task4.js
