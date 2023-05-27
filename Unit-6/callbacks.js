@@ -82,22 +82,24 @@ calculateSum([1,2,3], someFuncWithParam);
  * if someFunc = () => console.log("Callback invoked!");
  */
 
-// I DON'T UNDERSTAND HOW THIS CODE WORKS
-const countdown = (duration, callback) => {
-    let counter = 0;
-    function countdownHelper() {
-      console.log(counter);
-      counter++;
-      if (counter > duration) {
-        callback();
-      } else {
-        setTimeout(countdownHelper, 1000);
-      }
+function countdown(duration, callback) {
+  let counter = 0;
+  
+  function countdownHelper() {
+    console.log(counter);
+    counter++;
+
+    if (counter > duration) {
+      callback();
+    } else {
+      setTimeout(countdownHelper, 1000);
     }
-    countdownHelper();
   }
 
-  countdown(10, someFunc);
+  countdownHelper();
+}
+
+countdown(3, someFunc);
 
 
 
@@ -126,7 +128,7 @@ const delayedGreeting = (name, callback) => {
     setTimeout(() => callback(resultOfTheAsyncFunc), 1000);
 };
 
-delayedGreeting('Alice', someFuncWithParam);
+//delayedGreeting('Alice', someFuncWithParam);
 
 
 /**
@@ -144,7 +146,7 @@ delayedGreeting('Alice', someFuncWithParam);
  *   nothing happens for 2 seconds
  * ...
  *  In the log you will see:
- *      "Hello, Alice! Welcome to the callbacks."
+ *      "Hello, Alice! Welcome to the session."
  * 
  * someFuncWith2Params is defined below
  */
@@ -154,10 +156,11 @@ const someFuncWith2Params = (name, message) => {
 
 // enter your code below
 const greetWithDelay = (name, delay, callback) => {
+  const message = "Welcome to the session.";
     setTimeout(() => callback(name, message), delay*1000);
 }
 
-greetWithDelay("Alice", 2, someFuncWith2Params);
+//greetWithDelay("Alice", 2, someFuncWith2Params);
 
 
 /**
