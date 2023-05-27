@@ -24,7 +24,13 @@ const someFuncWithParam = (resultOfTheAsyncFunc) => console.log(`Result = ${resu
  * if someFuncWithParam = (resultOfTheAsyncFunc) => console.log(`Result = ${resultOfTheAsyncFunc}`);
  */
 // enter your code below
-const addNumbers;
+
+const addNumbers = (num1, num2, someFuncWithParam) => {
+    const sum = num1 + num2;
+    someFuncWithParam(sum);
+}
+
+addNumbers(1, 2, someFuncWithParam);
 
 
 /**
@@ -42,7 +48,17 @@ const addNumbers;
  * if someFuncWithParam = (resultOfTheAsyncFunc) => console.log(`Result = ${resultOfTheAsyncFunc}`);
  */
 // enter your code below
-const calculateSum;
+
+const calculateSum = (arr, someFuncWithParam) => {
+    let sum = 0;
+    arr.forEach(element => {
+        //console.log(element);
+        sum = sum + element;
+        //console.log(sum);
+    });
+}
+
+calculateSum([1,2,3], someFuncWithParam);
 
 
 /**
@@ -65,8 +81,24 @@ const calculateSum;
  * 
  * if someFunc = () => console.log("Callback invoked!");
  */
-// enter your code below
-const countdown;
+
+// I DON'T UNDERSTAND HOW THIS CODE WORKS
+const countdown = (duration, callback) => {
+    let counter = 0;
+    function countdownHelper() {
+      console.log(counter);
+      counter++;
+      if (counter > duration) {
+        callback();
+      } else {
+        setTimeout(countdownHelper, 1000);
+      }
+    }
+    countdownHelper();
+  }
+
+  countdown(10, someFunc);
+
 
 
 /**
@@ -88,7 +120,13 @@ const countdown;
  * if someFuncWithParam = (resultOfTheAsyncFunc) => console.log(`Result = ${resultOfTheAsyncFunc}`);
  */
 // enter your code below
-const delayedGreeting;
+
+const delayedGreeting = (name, callback) => {
+    let resultOfTheAsyncFunc = `Hello ${name}`;
+    setTimeout(() => callback(resultOfTheAsyncFunc), 1000);
+};
+
+delayedGreeting('Alice', someFuncWithParam);
 
 
 /**
@@ -115,7 +153,12 @@ const someFuncWith2Params = (name, message) => {
 }
 
 // enter your code below
-const greetWithDelay;
+const greetWithDelay = (name, delay, callback) => {
+    const message = "Welcome to the callbacks.";
+    setTimeout(() => callback(name, message), delay*1000);
+}
+
+greetWithDelay("Alice", 2, someFuncWith2Params);
 
 
 /**
@@ -140,7 +183,11 @@ const greetWithDelay;
  * if someFunc = () => console.log("Callback invoked!");
  */
 // enter your code below
-const countdown2;
+
+const countdown2 = (duration, callback) => {
+    
+}
+
 
 
 module.exports = {
