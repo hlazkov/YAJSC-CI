@@ -4,7 +4,7 @@ const someFuncWith2Params = (name, message) => {
 
 // enter your code below
 const greetWithDelay = (name, delay, callback) => {
-    const message = "Welcome to the callbacks.";
+    const message = "Welcome to the session.";
     setTimeout(() => callback(name, message), delay*1000);
 }
 
