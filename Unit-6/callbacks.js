@@ -24,13 +24,10 @@ const someFuncWithParam = (resultOfTheAsyncFunc) => console.log(`Result = ${resu
  * if someFuncWithParam = (resultOfTheAsyncFunc) => console.log(`Result = ${resultOfTheAsyncFunc}`);
  */
 // enter your code below
-
 const addNumbers = (num1, num2, someFuncWithParam) => {
     const sum = num1 + num2;
     someFuncWithParam(sum);
 }
-
-addNumbers(1, 2, someFuncWithParam);
 
 
 /**
@@ -48,7 +45,6 @@ addNumbers(1, 2, someFuncWithParam);
  * if someFuncWithParam = (resultOfTheAsyncFunc) => console.log(`Result = ${resultOfTheAsyncFunc}`);
  */
 // enter your code below
-
 const calculateSum = (arr, someFuncWithParam) => {
     let sum = 0;
     arr.forEach(element => {
@@ -57,8 +53,6 @@ const calculateSum = (arr, someFuncWithParam) => {
         //console.log(sum);
     });
 }
-
-calculateSum([1,2,3], someFuncWithParam);
 
 
 /**
@@ -81,8 +75,8 @@ calculateSum([1,2,3], someFuncWithParam);
  * 
  * if someFunc = () => console.log("Callback invoked!");
  */
-
-function countdown(duration, callback) {
+// enter your code below
+const countdown = (duration, callback) => {
   let counter = 0;
   
   function countdownHelper() {
@@ -98,10 +92,6 @@ function countdown(duration, callback) {
 
   countdownHelper();
 }
-
-countdown(3, someFunc);
-
-
 
 /**
  * Level - Easy
@@ -122,13 +112,10 @@ countdown(3, someFunc);
  * if someFuncWithParam = (resultOfTheAsyncFunc) => console.log(`Result = ${resultOfTheAsyncFunc}`);
  */
 // enter your code below
-
 const delayedGreeting = (name, callback) => {
     let resultOfTheAsyncFunc = `Hello ${name}!`;
     setTimeout(() => callback(resultOfTheAsyncFunc), 1000);
 };
-
-delayedGreeting('Alice', someFuncWithParam);
 
 
 /**
@@ -146,7 +133,7 @@ delayedGreeting('Alice', someFuncWithParam);
  *   nothing happens for 2 seconds
  * ...
  *  In the log you will see:
- *      "Hello, Alice! Welcome to the session."
+ *      "Hello, Alice! Welcome to the callbacks."
  * 
  * someFuncWith2Params is defined below
  */
@@ -156,11 +143,9 @@ const someFuncWith2Params = (name, message) => {
 
 // enter your code below
 const greetWithDelay = (name, delay, callback) => {
-  const message = "Welcome to the session.";
-    setTimeout(() => callback(name, message), delay*1000);
-}
-
-//greetWithDelay("Alice", 2, someFuncWith2Params);
+    const message = "Welcome to the session.";
+      setTimeout(() => callback(name, message), delay*1000);
+  }
 
 
 /**
@@ -185,26 +170,22 @@ const greetWithDelay = (name, delay, callback) => {
  * if someFunc = () => console.log("Callback invoked!");
  */
 // enter your code below
-
 const countdown2 = (duration, callback) => {
-  let counter = duration;
+    let counter = duration;
+    
+    function countdownHelper() {
+      console.log(counter);
+      counter--;
   
-  function countdownHelper() {
-    console.log(counter);
-    counter--;
-
-    if (counter < 0) {
-      callback();
-    } else {
-      setTimeout(countdownHelper, 1000);
+      if (counter < 0) {
+        callback();
+      } else {
+        setTimeout(countdownHelper, 1000);
+      }
     }
+  
+    countdownHelper();
   }
-
-  countdownHelper();
-}
-
-countdown2(10, someFunc);
-
 
 
 module.exports = {
