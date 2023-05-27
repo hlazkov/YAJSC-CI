@@ -20,6 +20,7 @@
     "test:unit5:objects": "mocha Unit-5/test/objects.spec.js",
     "test:unit5:classes": "mocha Unit-5/test/classes.spec.js",
     "test:unit6": "mocha Unit-6/test/*.spec.js",
+    "test:unit6:callbacks": "mocha Unit-6/test/callbacks.spec.js",
     "test:unit6:promises": "mocha Unit-6/test/promises.spec.js",
     "test:unit6:async": "mocha Unit-6/test/asyncAwait.spec.js"
   },

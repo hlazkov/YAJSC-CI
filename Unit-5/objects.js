@@ -61,7 +61,7 @@ function isARobot (obj) {
  * Level - Normal
  * Task - 4
  * Create a task4Func which will
- * get the list of object properties which values are Numbers
+ * return the list of object properties if theirs values are Numbers
  */
 function task4Func (obj) {
 	let arr = [];

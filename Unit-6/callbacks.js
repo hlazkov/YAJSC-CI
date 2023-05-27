@@ -24,12 +24,14 @@ const someFuncWithParam = (resultOfTheAsyncFunc) => console.log(`Result = ${resu
  * if someFuncWithParam = (resultOfTheAsyncFunc) => console.log(`Result = ${resultOfTheAsyncFunc}`);
  */
 // enter your code below
+
 const addNumbers = (num1, num2, someFuncWithParam) => {
     const sum = num1 + num2;
     someFuncWithParam(sum);
 }
 
 addNumbers(1, 2, someFuncWithParam);
+
 
 /**
  * Level - Easy
@@ -46,6 +48,7 @@ addNumbers(1, 2, someFuncWithParam);
  * if someFuncWithParam = (resultOfTheAsyncFunc) => console.log(`Result = ${resultOfTheAsyncFunc}`);
  */
 // enter your code below
+
 const calculateSum = (arr, someFuncWithParam) => {
     let sum = 0;
     arr.forEach(element => {
@@ -78,6 +81,7 @@ calculateSum([1,2,3], someFuncWithParam);
  * 
  * if someFunc = () => console.log("Callback invoked!");
  */
+
 // I DON'T UNDERSTAND HOW THIS CODE WORKS
 const countdown = (duration, callback) => {
     let counter = 0;
@@ -94,6 +98,7 @@ const countdown = (duration, callback) => {
   }
 
   countdown(10, someFunc);
+
 
 
 /**
@@ -115,6 +120,7 @@ const countdown = (duration, callback) => {
  * if someFuncWithParam = (resultOfTheAsyncFunc) => console.log(`Result = ${resultOfTheAsyncFunc}`);
  */
 // enter your code below
+
 const delayedGreeting = (name, callback) => {
     let resultOfTheAsyncFunc = `Hello ${name}`;
     setTimeout(() => callback(resultOfTheAsyncFunc), 1000);
@@ -153,6 +159,7 @@ const greetWithDelay = (name, delay, callback) => {
 
 greetWithDelay("Alice", 2, someFuncWith2Params);
 
+
 /**
  * Level - Hard
  * Task - 1
@@ -175,9 +182,11 @@ greetWithDelay("Alice", 2, someFuncWith2Params);
  * if someFunc = () => console.log("Callback invoked!");
  */
 // enter your code below
+
 const countdown2 = (duration, callback) => {
     
 }
+
 
 
 module.exports = {

@@ -22,6 +22,7 @@ function task1Func () {
 	return true;
 }
 
+
 /**
  * Level - Easy
  * Task - 2
@@ -35,6 +36,7 @@ let task2Func = function(dob_year) {
 }
 
 task2Func(1989);
+
 
 /**
  * Level - Easy
@@ -63,6 +65,7 @@ let task3Func = (g) => {
 //console.log(task3Func(2));
 //console.log(task3Func(0));
 
+
 /**
  * Level - Easy
  * Task - 4
@@ -76,6 +79,7 @@ function task4Func (a, b) {
 	return sum;
 }
 
+
 /**
  * Level - Easy
  * Task - 5
@@ -87,6 +91,7 @@ function task5Func (a, b=10) {
 	let sum = a + b;
 	return sum;
 }
+
 
 /**
  * Level - Easy
@@ -102,6 +107,7 @@ function task6Func (obj) {
 }
 
 //task6Func({firstName: "Jack", lastName: "London"});
+
 
 /**
  * Level - Easy
@@ -126,6 +132,7 @@ function task7Func (firstName = "", lastName = "", age = 0) {
 	return obj;
 }
 
+
 /**
  * Level - Easy
  * Task - 8
@@ -144,6 +151,7 @@ function task8Func (number) {
 		return isOdd;
 	}
 }
+
 
 /**
  * Level - Easy
@@ -170,6 +178,7 @@ function task9Func (arr) {
 
 //task9Func(["ten", "two", "four", "x"]);
 
+
 /**
  * Level - Easy
  * Task - 10
@@ -189,14 +198,16 @@ function task10Func (arr) {
 
 //task10Func([{direction: "Kiyv - Krakow", distance: 879}, {direction: "Kiyv - Tokyo", distance: 8193}]);
 
+
 /**
  * Level - Easy
  * Task - 11
  * Callback
- * Create a function task11Func which will take another function
+ * Create a function task11Func which will take another function as an argument
  * and returns result of execution of that another function in string format
+ * NOTE: you can use `someFunc1` or `someFunc2` for testing purposes
  * @example
- * if callBackFunction returns "THIS IS THE RESULT"
+ * if callBackFunction (e.g. `someFunc1`) returns "THIS IS THE RESULT"
  * than task11Func should return "Callback result = THIS IS THE RESULT"
  */
 
@@ -213,6 +224,8 @@ function func (string) {
 }
 //console.log(func("THIS IS THE RESULT"));
 //task11Func(func("THIS IS THE RESULT"));
+
+
 
 /**
  * Level - Normal
@@ -244,6 +257,7 @@ function task12Func (...args) {
 
 //task12Func([1,2,3]);
 
+
 /**
  * Level - Normal
  * Task - 13
@@ -263,6 +277,7 @@ function task13Func (number) {
 }
 
 //task13Func(2);
+
 
 /**
  * Level - Hardcore

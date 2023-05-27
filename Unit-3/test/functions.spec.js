@@ -121,9 +121,12 @@ describe('Unit 3 - Easy - Functions:', () => {
 
 	describe('Task 11 - callback', () => {
 		it('Verifying task11Func function returns correct string', () => {
-			const sentence = chance.sentence();
-			let myFunc = () => sentence;
-			expect(task11Func(myFunc)).to.equal(`Callback result = ${myFunc()}`);
+			const text = chance.sentence();
+			let myFunc = () => {
+				return text;
+			};
+
+			expect(task11Func(myFunc)).to.equal(`Callback result = ${text}`);
 		});
 	});
 });
