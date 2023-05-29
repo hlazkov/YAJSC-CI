@@ -17,3 +17,4 @@ greetWithDelay("Alice", 2, someFuncWith2Params);
 // *  In the log you will see:
 // *      "Hello, Alice! Welcome to the callbacks."
 
+// // node ./Unit-6/cb_greetWithDelay.js
