@@ -17,6 +17,12 @@ const {
  * Create a promiseResolve function which will return promise resolved with string value "Resolved!"
  */
 
+function promiseResolve() {
+	return new Promise(resolve => {
+		resolve('Resolved!')
+		});
+	}
+
 // enter your code here
 /**
  * Level - Easy
@@ -24,7 +30,11 @@ const {
  * Create a promiseReject function which will return promise rejected with string value "Rejected!"
  */
 
-// enter your code here
+function promiseReject () {
+	return new Promise(reject => {
+		reject('Rejected!');
+	})
+}
 
 /**
  * Level - Easy
@@ -34,7 +44,15 @@ const {
  * Should reject when param === false with "Rejected!" string
  */
 
-// enter your code here
+function fullPromise(param) {
+	return new Promise((resolve, reject) => {
+		if (param) {
+			resolve('Resolved!');
+		} else {
+			reject('Rejected!');
+		}
+	})
+}
 
 /**
  * Level - Easy
@@ -47,7 +65,18 @@ const {
  * NOTE: Use `then` functions
  */
 
-// enter your code here
+function task4Func() {
+	return promise1()
+		.then(res => {
+			console.log(res);
+			const result = res + " was resolved successfully";
+			return result;
+		})
+	
+}
+
+console.log(task4Func());
+
 
 /**
  * Level - Normal
@@ -58,7 +87,20 @@ const {
  * NOTE: Use `then` functions
  */
 
-// enter your code here
+function task5Func() {
+	return promise1()
+		.then(res => {
+			const result1 = res;
+			return promise2()
+			.then(res => {
+				const result2 = res;
+				const finalResult = `${result1} and ${result2} - successfully resolved`;
+				return finalResult;
+		})
+	})
+}
+
+//task5Func();
 
 /**
  * Level - Normal
@@ -70,7 +112,22 @@ const {
  * task6Func() -> ["Promise1", "Promise2"]
  */
 
-// enter your code here
+function task6Func() {
+	return promise1()
+	.then(res => {
+		let arr = new Array;
+		const result1 = res;
+		arr.push(result1);
+		return promise2()
+		.then(res => {
+			const result2 = res;
+			arr.push(result2)
+			return arr;
+	})
+})
+}
+
+//task6Func();
 
 /**
  * Hardcore tasks from codewars.com:
