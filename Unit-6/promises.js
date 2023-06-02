@@ -112,22 +112,33 @@ function task5Func() {
  * task6Func() -> ["Promise1", "Promise2"]
  */
 
+// THIS CODE TAKES 30 SEC
+// function task6Func() {
+// 	return promise1()
+// 	.then(res => {
+// 		let arr = new Array;
+// 		const result1 = res;
+// 		arr.push(result1);
+// 		return promise2()
+// 		.then(res => {
+// 			const result2 = res;
+// 			arr.push(result2)
+// 			return arr;
+// 	})
+// })
+// }
+
+//THIS CODE TAKES 20 SEC
 function task6Func() {
-	return promise1()
+	return Promise.all([promise1(), promise2()])
 	.then(res => {
 		let arr = new Array;
-		const result1 = res;
-		arr.push(result1);
-		return promise2()
-		.then(res => {
-			const result2 = res;
-			arr.push(result2)
-			return arr;
+		arr = res;
+		return arr;
 	})
-})
 }
 
-//task6Func();
+task6Func();
 
 /**
  * Hardcore tasks from codewars.com:

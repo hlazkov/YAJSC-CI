@@ -51,7 +51,7 @@ describe('Unit 5 - Normal - Promises:', () => {
 		}).timeout(40000);
 	});
 
-	describe('Task 6 - resolving several promises at a time', () => {
+	describe.only('Task 6 - resolving several promises at a time', () => {
 		it('Verify task5Func will return correct string', async () => {
 			expect(await task6Func()).have.members(["Promise1", "Promise2"]);
 		}).timeout(40000);
