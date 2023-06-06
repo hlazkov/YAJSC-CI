@@ -55,10 +55,19 @@ async function asyncPromiseAll() {
  * if promiseResolve() rejection reason was "BlablaRejected"
  * than function should catch an error and return "BlablaRejected was handled and result returned"
  */
+
+// async function asyncPromiseReject() {
+//   const res1 = await promiseReject();
+//   const res2 = `${res1} was handled and result returned`
+//   return res2;
+// }
+
 async function asyncPromiseReject() {
-  const res1 = await promiseReject();
-  const res2 = `${res1} was handled and result returned`
-  return res2;
+  try {
+    const res1 = await promiseReject();
+  } catch (err) {
+    return `${err} was handled and result returned`
+  }
 }
 
 asyncPromiseReject();

@@ -31,7 +31,7 @@ function promiseResolve() {
  */
 
 function promiseReject () {
-	return new Promise(reject => {
+	return new Promise((resolve, reject) => {
 		reject('Rejected!');
 	})
 }
@@ -89,11 +89,9 @@ console.log(task4Func());
 
 function task5Func() {
 	return promise1()
-		.then(res => {
-			const result1 = res;
+		.then(result1 => {
 			return promise2()
-			.then(res => {
-				const result2 = res;
+			.then(result2 => {
 				const finalResult = `${result1} and ${result2} - successfully resolved`;
 				return finalResult;
 		})
@@ -130,12 +128,11 @@ function task5Func() {
 
 //THIS CODE TAKES 20 SEC
 function task6Func() {
-	return Promise.all([promise1(), promise2()])
-	.then(res => {
-		let arr = new Array;
-		arr = res;
-		return arr;
-	})
+	const res = Promise.all([promise1(), promise2()]);
+	let arr = new Array;
+	arr = res;
+	return arr;
+
 }
 
 task6Func();
