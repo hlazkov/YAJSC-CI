@@ -128,11 +128,7 @@ function task5Func() {
 
 //THIS CODE TAKES 20 SEC
 function task6Func() {
-	const res = Promise.all([promise1(), promise2()]);
-	let arr = new Array;
-	arr = res;
-	return arr;
-
+	return Promise.all([promise1(), promise2()]);
 }
 
 task6Func();
