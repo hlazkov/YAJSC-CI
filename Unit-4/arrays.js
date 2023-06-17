@@ -10,7 +10,9 @@
  * Create a task1Func which will return second item from an array
  */
 let task1Func  = (arr) => {
-	// enter your code here
+	//console.log(arr);
+	//console.log(arr[2]);
+	return arr[2];
 }
 
 /**
@@ -19,8 +21,11 @@ let task1Func  = (arr) => {
  * Create a task2Func which will add 1 item to a passed array (e.g. "new item")
  */
 let task2Func = (arr) => {
-	// enter your code here
+	return console.log(arr.push("new item"));
 }
+//const arr = [1,2,3]
+//task2Func(arr);
+//console.log(arr);
 
 /**
  * Level - Easy
@@ -29,7 +34,7 @@ let task2Func = (arr) => {
  * and return array containing elements from array1 and array2
  */
 let task3Func = (arr1, arr2) => {
-	// enter your code here
+	return arr1.concat(arr2);
 }
 
 /**
@@ -39,8 +44,12 @@ let task3Func = (arr1, arr2) => {
  * return new array with specified length and filled in with specified value
  */
 let task4Func = (length, value) => {
-	// enter your code here
+	const arr = new Array(length);
+	//console.log(arr.fill(value));
+	return arr.fill(value)
 }
+
+//task4Func(5, "a"); // [ 'a', 'a', 'a', 'a', 'a' ]
 
 /**
  * Level - Easy
@@ -50,9 +59,34 @@ let task4Func = (length, value) => {
  * and returns a number of people whose name is "Jack" or age is lower than 30
  * don't use any cycles
  */
+
+//ADDED 2ND OPTION WITH FILTER()
+
 let task5Func = (arr) => {
-	// enter your code here
+	let newArr = [];
+	arr.filter(element => {
+		//console.log(element)
+		if (element.name.includes("Jack ") || element.age < 30) {
+			newArr.push(element);
+		}
+	});
+	//console.log(newArr);
+	return newArr.length;
 }
+
+// let task5Func = (arr) => {
+// 	let newArr = [];
+// 	arr.forEach(element => {
+// 		//console.log(element)
+// 		if (element.name.includes("Jack") || element.age < 30) {
+// 			newArr.push(element);
+// 		}
+// 	});
+// 	console.log(newArr);
+// 	return newArr.length;
+// }
+
+//task5Func([{name: "Jane Dou", age: 45}, {name: "Peter Parker", age: 18}]);
 
 /**
  * Level - Easy
@@ -62,9 +96,27 @@ let task5Func = (arr) => {
  * e.g. [{name: "Jane Dou", age: 45}, {name: "Peter Parker", age: 18}]
  * return new array of all people who are older than 30
  */
+
+// 2ND OPTION WITH FILTER()
 let task6Func = (arr) => {
-	// enter your code here
+	let newArr = [];
+	newArr = arr.filter((element) => element.age > 30);
+	//console.log(newArr);
+	return newArr;
 }
+
+// let task6Func = (arr) => {
+// 	let newArr = [];
+// 	arr.find((el) => {
+// 		//console.log(el);
+// 		//console.log(el.age > 30);
+// 		if ((el.age > 30) === true) {
+// 			newArr.push(el);
+// 		}
+// 	});
+// 	//console.log(newArr);
+// 	return newArr;
+// }
 
 /**
  * Level - Easy
@@ -81,9 +133,72 @@ let task6Func = (arr) => {
  * "young adult" from 19 to 21
  * "adult" from 22 and greater
  */
+// 2ND OPTION USING MAP METHOD
 let task7Func = (arr) => {
-	// enter your code here
+	for (let element=0; element < arr.length; element++) {
+		let newArr = [];
+		arr.map(element => {
+			if (element.age <=1) {
+				maturity = "baby";
+				element.maturity = maturity;
+				newArr.push(element);
+			} else if (element.age >=2 && element.age <= 3) {
+				maturity = "toddler";
+				element.maturity = maturity;
+				newArr.push(element);
+			} else if (element.age >=4 && element.age <= 5) {
+				maturity = "preschooler";
+				element.maturity = maturity;
+				newArr.push(element);
+			} else if (element.age >=6 && element.age <= 12) {
+				maturity = "gradeschooler";
+				element.maturity = maturity;
+				newArr.push(element);
+			} else if (element.age >=13 && element.age <= 18) {
+				maturity = "teen";
+				element.maturity = maturity;
+				newArr.push(element);
+			} else if (element.age >=19 && element.age <= 21) {
+				maturity = "young adult";
+				element.maturity = maturity;
+				newArr.push(element);
+			} else if (element.age >=22) {
+				maturity = "adult";
+				element.maturity = maturity;
+				newArr.push(element);
+			}
+		})
+		//console.log(newArr);
+		return newArr;	
+	}
 }
+
+// let task7Func = (arr) => {
+// 	let newArr = new Array;
+// 	for (let i=0; i < arr.length; i++) {
+// 		let maturity;
+// 		let element = arr[i];
+// 		if (element.age <=1) {
+// 			maturity = "baby";
+// 		} else if (element.age >=2 && element.age <= 3) {
+// 			maturity = "toddler";
+// 		} else if (element.age >=4 && element.age <= 5) {
+// 			maturity = "preschooler";
+// 		} else if (element.age >=6 && element.age <= 12) {
+// 			maturity = "gradeschooler";
+// 		} else if (element.age >=13 && element.age <= 18) {
+// 			maturity = "teen";
+// 		} else if (element.age >=19 && element.age <= 21) {
+// 			maturity = "young adult";
+// 		} else if (element.age >=22) {
+// 			maturity = "adult";
+// 		}
+// 		newEl = { name: element.name, age: element.age, maturity: maturity };
+// 		//console.log(newEl);
+// 		newArr.push(newEl);
+// 	}
+// 	return newArr;
+// }
 
 /**
  * Level - Normal
@@ -93,9 +208,27 @@ let task7Func = (arr) => {
  * console.log(minItem([2,5,6,3,1,8])) // 4
  * Note: try different approaches (e.g. using forEach or using Math object and its function)
  */
+
+// 2ND OPTION WITH FOREACH
 let task8Func = (arr) => {
-	// enter your code here
+	let min = arr[0];
+	let minIndex;
+	arr.forEach((element, index) => {
+		if (element < min) {
+			min = element;
+			minIndex = index;
+		}
+	})
+	return minIndex;
 }
+// let task8Func = (arr) => {
+// 	//console.log(arr);
+// 	const min = Math.min(...arr);
+// 	//console.log(min);
+// 	return arr.indexOf(min);
+// }
+
+task8Func([2,5,6,3,1,8]);
 
 /**
  * Level - Normal
@@ -103,9 +236,32 @@ let task8Func = (arr) => {
  * Crete task9Func which will return number of valid entries of an array
  * valid means not null/undefined
  */
+
+// 2ND OPTION WITHOUT CYCLES
 let task9Func = (arr) => {
-	// enter your code here
+	num = 0;
+	arr.forEach(element => {
+		if (element !== null && element !== undefined) {
+			num = num + 1;
+		}
+	})
+	return num;
 }
+	
+	
+
+
+// let task9Func = (arr) => {
+// 	num = 0;
+// 	//console.log(arr);
+// 	for (let i=0; i < arr.length; i++) {
+// 		if (arr[i] !== null && arr[i] !== undefined) {
+// 			num = num + 1;
+// 		}
+// 	}
+// 	//console.log(num);
+// 	return num;
+// }
 
 /**
  * Level - Normal
@@ -116,7 +272,19 @@ let task9Func = (arr) => {
  */
 
 let task10Func = (arr) => {
-	// enter your code here
+	let numInv = 0;
+	let newArr = [];
+	arr.forEach(element => {
+		if (element !== null && element !== undefined) {
+			newArr.push(element);
+		} else {
+			numInv = numInv+1;
+		}
+	});
+	if (numInv > 3) {
+		throw new Error("The data needs to be reviewed");
+	}
+	return newArr;
 }
 
 /**
