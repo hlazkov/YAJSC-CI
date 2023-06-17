@@ -24,10 +24,7 @@ const someFuncWithParam = (resultOfTheAsyncFunc) => console.log(`Result = ${resu
  * if someFuncWithParam = (resultOfTheAsyncFunc) => console.log(`Result = ${resultOfTheAsyncFunc}`);
  */
 // enter your code below
-const addNumbers = (num1, num2, someFuncWithParam) => {
-    const sum = num1 + num2;
-    someFuncWithParam(sum);
-}
+const addNumbers;
 
 
 /**
@@ -45,15 +42,7 @@ const addNumbers = (num1, num2, someFuncWithParam) => {
  * if someFuncWithParam = (resultOfTheAsyncFunc) => console.log(`Result = ${resultOfTheAsyncFunc}`);
  */
 // enter your code below
-const calculateSum = (arr, someFuncWithParam) => {
-    let sum = 0;
-    arr.forEach(element => {
-        //console.log(element);
-        sum = sum + element;
-        //console.log(sum);
-    });
-    someFuncWithParam(sum);
-}
+const calculateSum;
 
 
 /**
@@ -62,7 +51,7 @@ const calculateSum = (arr, someFuncWithParam) => {
  * Create a function 'countdown' that takes a duration in seconds 
  * and a callback function as parameters. 
  * Inside the function, console.log number that starts from 0
- * and increments by one until it reaches the specified duration. 
+ * and increments by one second until it reaches the specified duration. 
  * After the countdown finishes, return invoke the callback function.
  * @example
  * usage of the created function should be like:
@@ -77,22 +66,8 @@ const calculateSum = (arr, someFuncWithParam) => {
  * if someFunc = () => console.log("Callback invoked!");
  */
 // enter your code below
-const countdown = (duration, callback) => {
-    let counter = 0;
-    
-    let countdownHelper  = () => {
-      console.log(counter);
-      counter++;
-  
-      if (counter > duration) {
-        callback();
-      } else {
-          countdownHelper()
-      }
-    }
-  
-    countdownHelper();
-  }
+const countdown;
+
 
 /**
  * Level - Easy
@@ -113,10 +88,7 @@ const countdown = (duration, callback) => {
  * if someFuncWithParam = (resultOfTheAsyncFunc) => console.log(`Result = ${resultOfTheAsyncFunc}`);
  */
 // enter your code below
-const delayedGreeting = (name, callback) => {
-    let resultOfTheAsyncFunc = `Hello, ${name}!`;
-    setTimeout(() => callback(resultOfTheAsyncFunc), 1000);
-};
+const delayedGreeting;
 
 
 /**
@@ -143,10 +115,7 @@ const someFuncWith2Params = (name, message) => {
 }
 
 // enter your code below
-const greetWithDelay = (name, delay, callback) => {
-    const message = "Welcome to the session.";
-      setTimeout(() => callback(name, message), delay*1000);
-  }
+const greetWithDelay;
 
 
 /**
@@ -171,22 +140,7 @@ const greetWithDelay = (name, delay, callback) => {
  * if someFunc = () => console.log("Callback invoked!");
  */
 // enter your code below
-const countdown2 = (duration, callback) => {
-    let counter = duration;
-    
-    function countdownHelper() {
-      console.log(counter);
-      counter--;
-  
-      if (counter < 0) {
-        callback();
-      } else {
-        setTimeout(countdownHelper, 1000);
-      }
-    }
-  
-    countdownHelper();
-  }
+const countdown2;
 
 
 module.exports = {

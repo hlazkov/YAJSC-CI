@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "JS for QA/AQA course",
   "main": "index.js",
-  "type": "commonjs",
   "scripts": {
     "test": "mocha Unit*/**/*.spec.js",
     "test:unit0": "mocha Unit-0/*.spec.js",

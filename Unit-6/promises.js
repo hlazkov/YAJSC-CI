@@ -17,12 +17,6 @@ const {
  * Create a promiseResolve function which will return promise resolved with string value "Resolved!"
  */
 
-function promiseResolve() {
-	return new Promise(resolve => {
-		resolve('Resolved!')
-		});
-	}
-
 // enter your code here
 /**
  * Level - Easy
@@ -30,11 +24,7 @@ function promiseResolve() {
  * Create a promiseReject function which will return promise rejected with string value "Rejected!"
  */
 
-function promiseReject () {
-	return new Promise((resolve, reject) => {
-		reject('Rejected!');
-	})
-}
+// enter your code here
 
 /**
  * Level - Easy
@@ -44,15 +34,7 @@ function promiseReject () {
  * Should reject when param === false with "Rejected!" string
  */
 
-function fullPromise(param) {
-	return new Promise((resolve, reject) => {
-		if (param) {
-			resolve('Resolved!');
-		} else {
-			reject('Rejected!');
-		}
-	})
-}
+// enter your code here
 
 /**
  * Level - Easy
@@ -65,18 +47,7 @@ function fullPromise(param) {
  * NOTE: Use `then` functions
  */
 
-function task4Func() {
-	return promise1()
-		.then(res => {
-			console.log(res);
-			const result = res + " was resolved successfully";
-			return result;
-		})
-	
-}
-
-console.log(task4Func());
-
+// enter your code here
 
 /**
  * Level - Normal
@@ -87,18 +58,7 @@ console.log(task4Func());
  * NOTE: Use `then` functions
  */
 
-function task5Func() {
-	return promise1()
-		.then(result1 => {
-			return promise2()
-			.then(result2 => {
-				const finalResult = `${result1} and ${result2} - successfully resolved`;
-				return finalResult;
-		})
-	})
-}
-
-//task5Func();
+// enter your code here
 
 /**
  * Level - Normal
@@ -110,28 +70,7 @@ function task5Func() {
  * task6Func() -> ["Promise1", "Promise2"]
  */
 
-// THIS CODE TAKES 30 SEC
-// function task6Func() {
-// 	return promise1()
-// 	.then(res => {
-// 		let arr = new Array;
-// 		const result1 = res;
-// 		arr.push(result1);
-// 		return promise2()
-// 		.then(res => {
-// 			const result2 = res;
-// 			arr.push(result2)
-// 			return arr;
-// 	})
-// })
-// }
-
-//THIS CODE TAKES 20 SEC
-function task6Func() {
-	return Promise.all([promise1(), promise2()]);
-}
-
-task6Func();
+// enter your code here
 
 /**
  * Hardcore tasks from codewars.com:

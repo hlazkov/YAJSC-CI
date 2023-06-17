@@ -14,21 +14,21 @@
  * Create "var" variable named myNum and set its value equal to 74
  */
 
-var myNum = 74;
+// enter your code here
 
 /**
  * Level - Easy
  * Create "let" variable named myText and set its value equal to "Jack"
  */
 
-let myText = "Jack";
+// enter your code here
 
 /**
  * Level - Easy
  * Create "const" variable named myBool and set its value equal to false
  */
 
-const myBool = false;
+// enter your code here
 
 ///
 /// ----- Starting from here I'd recommend to use let (or const if applicable) variables
@@ -39,28 +39,28 @@ const myBool = false;
  * Create variable named myNull and set its value equal to null
  */
 
-let myNull = null;
+// enter your code here
 
 /**
  * Level - Easy
  * Create variable named myUndefined and set its value equal to undefined
  */
 
-let myUndefined = undefined;
+// enter your code here
 
 /**
  * Level - Easy
  * Create variable named myArr and set its value to be an array of numbers from 2 to 7
  */
 
-let myArr = [2,3,4,5,6,7];
+// enter your code here
 
 /**
  * Level - Easy
  * Create variable named myArr1 and set its value to be an empty array
  */
 
-let myArr1 = [];
+// enter your code here
 
 /**
  * Level - Normal
@@ -68,9 +68,7 @@ let myArr1 = [];
  * make first arrray element to be equal to 'I am the first'
  */
 
-let myArr1_1 = [];
-myArr1_1[0] = "I am the first";
-console.log(myArr1_1)
+// enter your code here
 
 /**
  * Level - Normal
@@ -78,7 +76,7 @@ console.log(myArr1_1)
  * NOTE: use `new Array` syntax
  */
 
-let myArr2 = new Array();
+// enter your code here
 
 
 /**
@@ -88,8 +86,7 @@ let myArr2 = new Array();
  * NOTE: use `new Array` syntax
  */
 
-let myArr3 = new Array (3);
-console.log(myArr3.length)
+// enter your code here
 
 /**
  * Level - Normal
@@ -102,7 +99,7 @@ console.log(myArr3.length)
  * NOTE: use `new Array` syntax
  */
 
-let myArr4 = new Array(10, null, "I'm the third one", false);
+// enter your code here
 
 /**
  * Level - Easy
@@ -110,9 +107,7 @@ let myArr4 = new Array(10, null, "I'm the third one", false);
  * NOTE: you should use myArr variable here
  */
 
-let fourthElement = myArr[3];
-console.log("myArr=", myArr);
-console.log("myArr[3]=", myArr[3]);
+// enter your code here
 
 /**
  * Level - Easy
@@ -120,7 +115,7 @@ console.log("myArr[3]=", myArr[3]);
  * NOTE: you should use myArr variable here
  */
 
-let arrayOperations = myArr[3] - myArr[2];
+// enter your code here
 
 /**
  * Level - Easy
@@ -128,7 +123,7 @@ let arrayOperations = myArr[3] - myArr[2];
  * NOTE: you should use myNum variable here
  */
 
-let myNum2 = myNum / 2;
+// enter your code here
 
 /**
  * Level - Easy
@@ -136,15 +131,14 @@ let myNum2 = myNum / 2;
  * NOTE: Use myText and myNum2 variables to solve it. Result should be something like "George is 21"
  */
 
-let myText2 = myText + " is " + myNum2;
-console.log(myText2);
+// enter your code here
 
 /**
  * Level - Normal
  * Create variable named myBool2 and set its value to be equality comparison (not strict) of myNum and myNum2 variables
  */
 
-let myBool2 = (myNum == myNum2);
+// enter your code here
 
 /**
  * Level - Normal
@@ -152,20 +146,20 @@ let myBool2 = (myNum == myNum2);
  * NOTE: string should be used
  */
 
-let myBool3 = (myNum2 === "37");
+// enter your code here
 
 /**
  * Create variable named myUndefined2 and set its value equal to without "undefined" word usage
  */
 
-let myUndefined2;
+// enter your code here
 
 /**
  * Level - Easy
  * Create variable named myObj and set its value as object with key firstName and value "John"
  */
 
-let myObj = {firstName: "John"};
+// enter your code here
 
 
 /**
@@ -173,8 +167,7 @@ let myObj = {firstName: "John"};
  * Set new key/property to myObj object named lastName with value "Dou"
  */
 
-myObj.lastName = "Dou";
-console.log(myObj);
+// enter your code here
 
 /**
  * Level - Easy
@@ -182,8 +175,7 @@ console.log(myObj);
  * NOTE: you should use myObj in this task
  */
 
-myObj.fullName = myObj.firstName + " " + myObj.lastName;
-console.log(myObj.fullName);
+// enter your code here
 
 module.exports = {
     myNum, myText, myBool, myNull, myUndefined,

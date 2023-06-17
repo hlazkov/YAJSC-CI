@@ -21,32 +21,14 @@
 let task1For = 0, task1while = 0, task1Do = 0;
 
 // Task - 1: "for" algorithm
-for (let i = 0; i<=10; i++) {
-  //task1For = task1For + i;
-  task1For += i;
-}
-
-// console.log(task1For);
+// enter your code here
 
 
 // Task - 1: "while" algorithm
-let j = 0;
-while (j<=10) {
-  task1while = task1while + j;
-  j++;
-}
-
-// console.log(task1while);
+// enter your code here
 
 // Task - 1: "do..while" algorithm
-
-let k = 0;
-
-do {
-  task1Do = task1Do + k;
-  k++;
-} while (k<=10);
-
+// enter your code here
 
 /**
  * Level - Easy
@@ -61,12 +43,7 @@ const task2x = -238;
 const task2y = 320;
 let task2Res = 0;
 
-for (let l=task2x; l<=task2y; l++) {
-  // console.log("before l="+l);
-  task2Res = task2Res + l;
-  // console.log("after l="+l);
-  // console.log("task2Res="+task2Res);
-}
+// enter your code here
 
 
 /**
@@ -84,10 +61,7 @@ for (let l=task2x; l<=task2y; l++) {
 const task3Array = ["A", "B", "C", "D", "E", "F", "G", "H", "I"]; // => "ABCDEFGHI"
 let task3Res = '';
 
-for (let m of task3Array) {
-  task3Res = task3Res + m;
-  //console.log(task3Res);
-}
+// enter your code here
 
 
 /**
@@ -106,11 +80,7 @@ const task4personIncomes = {
   depositIncome: 281,
 };
 
-for (let key in task4personIncomes) {
-  //console.log(task4personIncomes[key]);
-  task4TotalIncome = task4TotalIncome + task4personIncomes[key];
-  //console.log("task4TotalIncome="+task4TotalIncome);
-}
+// enter your code here
 
 
 /**
@@ -125,26 +95,14 @@ let task5ForFactorial = 1, task5WhileFactorial = 1, task5DoFactorial = 1;
 const task5n = 10; //10! = 3628800
 
 // Task - 5: "for" algorithm
-for (let n=1; n <= task5n; n++) {
-  task5ForFactorial = task5ForFactorial * n;
-  //console.log("task5ForFactorial="+task5ForFactorial);
-}
+// enter your code here
 
 
 // Task - 5: "while" algorithm
-let o=1;
-while (o<=task5n) {
-  task5WhileFactorial = task5WhileFactorial * o;
-  o++;
-}
-
+// enter your code here
 
 // Task - 5: "do" algorithm
-let p=1;
-do {
-  task5DoFactorial = task5DoFactorial * p;
-  p++;
-} while (p<=task5n);
+// enter your code here
 
 /**
  * Level - Normal
@@ -158,13 +116,7 @@ do {
 const task6Array = ["A", "B", "C", "D", "E", "F", "G", "H", "I"]; // => "BDFH"
 let task6Res = '';
 
-for (let r=1; r < task6Array.length;r=r+2) {
-  //console.log("r="+r);
-  //console.log("task6Array[r]="+task6Array[r]);
-  task6Res = task6Res + task6Array[r];
-  }
-
-//console.log("task6Res="+task6Res);
+// enter your code here
 
 
 /**
@@ -177,43 +129,25 @@ for (let r=1; r < task6Array.length;r=r+2) {
  * NOTE: don't use array.reverse() method
  */
 
-const task7Array = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]; // => "JHFDB"
+const task7Array = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]; // => "IGECA"
 let task7Res = '';
 
-for (let s = task7Array.length-1; s >=0; s--) {
-  if (s % 2 != 0) {
-    //console.log("s="+s);
-    //console.log("task7Array[s]="+task7Array[s]);
-    task7Res = task7Res + task7Array[s];
-    //console.log("task7Res="+task7Res);
-  }
-}
-
-//console.log("task7Res="+task7Res);
-//console.log(typeof(task7Res));
+// enter your code here
 
 
 /**
  * Level - Normal
- * Task - 8
+ * Task - 7
  * Implement algorithm that will
  * use in an array of numbers and returns the sum of all the even numbers in the given array.
  * Please store the result in task8Res variable
  * NOTE: use a `for` loop to iterate over the array and check if each number is even
  */
 
-const task8Array = [2, 7, 15, 1, 0, 100200]; // => 100202
+const task8Array = [2, 7, 15, 1, 0, 100200];
 let task8Res = 0;
 
-for (let t = 0; t < task7Array.length; t++) {
-  //console.log("t="+t);
-  if (task8Array[t] % 2 === 0) {
-    //console.log("t="+t);
-    //console.log("task8Array[t]="+task8Array[t]);
-    task8Res = task8Res + task8Array[t];
-    //console.log("task7Res="+task7Res);
-  }
-}
+// enter your code here
 
 
 /**
