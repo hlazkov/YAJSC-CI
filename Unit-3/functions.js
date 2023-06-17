@@ -9,8 +9,6 @@
  * https://learn.javascript.ru/callbacks
  */
 
-const { should } = require("chai");
-
 /**
  * Level - Easy
  * Task - 1
@@ -18,9 +16,7 @@ const { should } = require("chai");
  * use function definition (also called a function declaration, or function statement)
  */
 
-function task1Func () {
-	return true;
-}
+// enter your code here
 
 
 /**
@@ -31,11 +27,7 @@ function task1Func () {
  * use function expression
  */
 
-let task2Func = function(dob_year) {
-	return 2023 - dob_year;
-}
-
-task2Func(1989);
+// enter your code here
 
 
 /**
@@ -47,23 +39,7 @@ task2Func(1989);
  * use function expression with arrow function notation
  */
 
-let task3Func = (g) => {
-	let gender;
-	if (g === 1) {
-		gender = "My gender is woman";
-		return gender
-	} else if (g === 2) {
-		gender = "My gender is man";
-		return gender
-	} else if (g === 0) {
-		gender = "My gender is other"
-		return gender
-	}
-}
-
-//console.log(task3Func(1));
-//console.log(task3Func(2));
-//console.log(task3Func(0));
+// enter your code here
 
 
 /**
@@ -74,10 +50,7 @@ let task3Func = (g) => {
  * NOTE: assume parameters are always numbers
  */
 
-function task4Func (a, b) {
-	let sum = a + b;
-	return sum;
-}
+// enter your code here
 
 
 /**
@@ -87,10 +60,7 @@ function task4Func (a, b) {
  * just make second parameter to have a default value equal 10
  */
 
-function task5Func (a, b=10) {
-	let sum = a + b;
-	return sum;
-}
+// enter your code here
 
 
 /**
@@ -101,12 +71,7 @@ function task5Func (a, b=10) {
  * and returns a string firstName plus lastName, separated by space
  */
 
-function task6Func (obj) {
-	let fullname = obj.firstName + " " + obj.lastName;
-	return fullname
-}
-
-//task6Func({firstName: "Jack", lastName: "London"});
+// enter your code here
 
 
 /**
@@ -123,14 +88,7 @@ function task6Func (obj) {
  * }
  */
 
-function task7Func (firstName = "", lastName = "", age = 0) {
-	let obj = {
-		firstName: firstName,
-		lastName: lastName,
-		age: age
-	}
-	return obj;
-}
+// enter your code here
 
 
 /**
@@ -141,16 +99,7 @@ function task7Func (firstName = "", lastName = "", age = 0) {
  * Hint: think about a remainder of two numbers
  */
 
-function task8Func (number) {
-	let isOdd;
-	if (number % 2 != 0) {
-		isOdd = true;
-		return isOdd;
-	} else {
-		isOdd = false;
-		return isOdd;
-	}
-}
+// enter your code here
 
 
 /**
@@ -161,22 +110,7 @@ function task8Func (number) {
  * task9Func(["ten", "two", "four"]) // => ten
  */
 
-function task9Func (arr) {
-	let shorterst = arr[0];
-	//console.log("Initial shortest is element " + arr[0]);
-	for (let n of arr) {
-		//console.log("n = " + n)
-		if (n.length < shorterst.length) {
-			//console.log("n.length < shorterst.length : " + n.length + "<" + shorterst.length)
-			shorterst = n;
-			//console.log("shortest = " + shorterst)
-		}
-	}
-	//console.log("final shortest = " + shorterst)
-	return shorterst;
-}
-
-//task9Func(["ten", "two", "four", "x"]);
+// enter your code here
 
 
 /**
@@ -187,16 +121,7 @@ function task9Func (arr) {
  * e.g [{direction: "Kiyv - Krakow", distance: 879}, {direction: "Kiyv - Tokyo", distance: 8193}]
  */
 
-function task10Func (arr) {
-	let totalDistance = 0;
-	for (let n of arr) {
-		//console.log(n.distance);
-		totalDistance+=n.distance
-	}
-	return totalDistance;
-}
-
-//task10Func([{direction: "Kiyv - Krakow", distance: 879}, {direction: "Kiyv - Tokyo", distance: 8193}]);
+// enter your code here
 
 
 /**
@@ -211,19 +136,16 @@ function task10Func (arr) {
  * than task11Func should return "Callback result = THIS IS THE RESULT"
  */
 
-function task11Func(f) {
-	let result = "Callback result = " + f();
-	//console.log("task11Func returns: " + result);
-	return result;
+// DO NOT DELETE below code
+const someFunc1 = () => {
+	return chance.sentence();
 }
 
-function func (string) {
-	console.log(string);
-	//console.log(typeof(string));
-	//return string;
+const someFunc2 = () => {
+	return 'blablball + 123';
 }
-//console.log(func("THIS IS THE RESULT"));
-//task11Func(func("THIS IS THE RESULT"));
+
+// enter your code here
 
 
 
@@ -241,21 +163,7 @@ function func (string) {
  * Note: use rest parameter and use it to get first param value
  */
 
-function task12Func (...args) {
-	let paramsNumber = 0;
-	for (let n of args) {
-		paramsNumber += 1
-		//console.log("paramsNumber = " + paramsNumber);
-	}
-	let obj = {
-		paramsNumber: paramsNumber,
-		firstParam: args[0]
-	}
-	//console.log(obj);
-	return obj;
-}
-
-//task12Func([1,2,3]);
+// enter your code here
 
 
 /**
@@ -266,17 +174,7 @@ function task12Func (...args) {
  * task13Func(5) // => gooooogle
  */
 
-function task13Func (number) {
-	let start = "g";
-	for (let i = 1; i <= number; i++) {
-		start = start + "o";
-		//console.log(start);
-	}
-	let result = start + "gle";
-	return result;
-}
-
-//task13Func(2);
+// enter your code here
 
 
 /**
@@ -294,21 +192,14 @@ const task14Object = {
 	age: 25,
 	friend: 'wolf',
 	keys() {
-		for (let n in task14Object) {
-			console.log (n);
-		}
+		// enter your code here
+
 	},
 	call() {
-		let str = "My name is " + this.name + " " + this.lastName + " and I am " + this.age + " years old. My best friend is a " + this.friend
-		return str;
+		// enter your code here
 	}
-};
 
-for (let n in task14Object) {
-	//console.log ("n = " + n);
 };
-
-//task14Object.keys();
 
 /**
  * Level - Hardcore
@@ -325,7 +216,7 @@ for (let n in task14Object) {
 
 function task15Func(discountPercentage) {
 	return function (amount) {
-		return amount - (amount * discountPercentage / 100);
+		// enter your code here
 	};
 }
 
