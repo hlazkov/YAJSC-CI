@@ -6,7 +6,7 @@ const {
 	asyncPromiseAll
 } = require("../asyncAwait");
 
-describe('Unit 5 - Easy - Async-Await:', () => {
+describe('Unit 7 - Easy - Async-Await:', () => {
 	describe('Task 1 - promise resolved with async await', () => {
 		it('Verify a promise will be resolved', async () => {
 			expect(await asyncPromiseResolve()).to.equal("Resolved! was resolved with async await!");
@@ -20,7 +20,7 @@ describe('Unit 5 - Easy - Async-Await:', () => {
 	});
 });
 
-describe('Unit 5 - Normal - Async-Await:', () => {
+describe('Unit 7 - Normal - Async-Await:', () => {
 	describe('Task 3 - handle rejected promise', () => {
 		it('Verify asyncPromiseReject will return correct string', async () => {
 			expect(await asyncPromiseReject()).to.equal(`Rejected! was handled and result returned`);

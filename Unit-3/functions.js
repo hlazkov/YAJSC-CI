@@ -138,11 +138,7 @@
 
 // DO NOT DELETE below code
 const someFunc1 = () => {
-	return chance.sentence();
-}
-
-const someFunc2 = () => {
-	return 'blablball + 123';
+	return chance.sentence(); // returns random sentence
 }
 
 // enter your code here

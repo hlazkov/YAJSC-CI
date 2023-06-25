@@ -79,6 +79,7 @@
 // enter your code here
 
 
+
 /**
  * Level - Normal
  * Create variable named myArr3 and set its value to be an array of lenght 3 and have empty elements
@@ -160,6 +161,7 @@
  */
 
 // enter your code here
+
 
 
 /**

@@ -16,13 +16,14 @@ const {promise2, promise1} = require("./utils/utilPromises");
  * Task - 1
  * Create an asyncPromiseResolve function which will
  * resolve the created earlier promiseResolve() promise
- * using async/await syntax inside the asyncPromiseResolve function 
+ * using async/await syntax inside the asyncPromiseResolve function
  * and modify the message result
  * @example
  * if promiseResolve() return "Blabla"
  * than function should return "Blabla was resolved with async await!"
  */
 // enter your code here
+let asyncPromiseResolve;
 
 /**
  * Level - Easy
@@ -34,6 +35,7 @@ const {promise2, promise1} = require("./utils/utilPromises");
  * asyncPromiseAll() -> ["Promise1", "Promise2"]
  */
 // enter your code here
+let asyncPromiseAll;
 
 /**
  * Level - Normal
@@ -47,6 +49,8 @@ const {promise2, promise1} = require("./utils/utilPromises");
  * than function should catch an error and return "BlablaRejected was handled and result returned"
  */
 // enter your code here
+let asyncPromiseReject;
+
 
 module.exports = {
   asyncPromiseResolve,

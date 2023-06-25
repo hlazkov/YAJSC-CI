@@ -18,6 +18,8 @@ const {
  */
 
 // enter your code here
+let promiseResolve;
+
 /**
  * Level - Easy
  * Task - 2
@@ -25,16 +27,18 @@ const {
  */
 
 // enter your code here
+let promiseReject;
 
 /**
  * Level - Easy
  * Task - 3
- * Create a function which returns a promise with both resolve and reject states
+ * Create a fullPromise function which returns a promise with both resolve and reject states
  * Should resolve when param === true with "Resolved!" string
  * Should reject when param === false with "Rejected!" string
  */
 
 // enter your code here
+let fullPromise;
 
 /**
  * Level - Easy
@@ -48,6 +52,7 @@ const {
  */
 
 // enter your code here
+let task4Func;
 
 /**
  * Level - Normal
@@ -59,6 +64,7 @@ const {
  */
 
 // enter your code here
+let task5Func;
 
 /**
  * Level - Normal
@@ -71,6 +77,7 @@ const {
  */
 
 // enter your code here
+let task6Func;
 
 /**
  * Hardcore tasks from codewars.com:

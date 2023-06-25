@@ -8,13 +8,8 @@ const {
 	task5Func,
 	task6Func
 } = require('../promises');
-// const {
-// 	asyncPromiseResolve,
-// 	asyncPromiseReject,
-// 	asyncPromiseAll
-// } = require("../asyncAwait");
 
-describe('Unit 5 - Easy - Promises:', () => {
+describe('Unit 7 - Easy - Promises:', () => {
 	describe('Task 1 - promise resolved', () => {
 		it('Verify a promise will be resolved', async () => {
 			expect(await promiseResolve()).to.equal("Resolved!");
@@ -23,7 +18,9 @@ describe('Unit 5 - Easy - Promises:', () => {
 
 	describe('Task 2 - promise rejected', () => {
 		it('Verify a promise will be rejected', async () => {
-			expect(await promiseReject().catch(err => err)).to.equal("Rejected!");
+			await promiseReject()
+				.then(() => assert.fail("Promise was not Rejected!"),
+						err => expect(err).to.equal("Rejected!"));
 		});
 	});
 
@@ -44,7 +41,7 @@ describe('Unit 5 - Easy - Promises:', () => {
 
 });
 
-describe('Unit 5 - Normal - Promises:', () => {
+describe('Unit 7 - Normal - Promises:', () => {
 	describe('Task 5 - chain of promises', () => {
 		it('Verify task5Func will return correct string', async () => {
 			expect(await task5Func()).to.equal(`Promise1 and Promise2 - successfully resolved`);
