@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const conditions = require('../conditions');
+const conditions = require('../2_conditions');
 
 const verifyTask3_4 = (task) => {
   if (conditions.y3 < 10) {

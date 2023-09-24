@@ -7,7 +7,7 @@ const {
 	task4Func,
 	task5Func,
 	task6Func
-} = require('../promises');
+} = require('../1_promises');
 
 describe('Unit 7 - Easy - Promises:', () => {
 	describe('Task 1 - promise resolved', () => {
@@ -29,7 +29,9 @@ describe('Unit 7 - Easy - Promises:', () => {
 			expect(await fullPromise(true)).to.equal('Resolved!');
 		});
 		it(`Verify fullPromise will be 'Rejected!' if param is false`, async () => {
-			expect(await fullPromise(false).catch(err => err)).to.equal('Rejected!');
+			await fullPromise(false)
+				.then(() => assert.fail("Promise was not Rejected!"),
+					err => expect(err).to.equal("Rejected!"));
 		});
 	});
 

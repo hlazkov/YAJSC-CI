@@ -1,12 +1,12 @@
 /**
  * Additional Reading:
  *
- * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for
- * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/break
- * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/while
- * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/do...while
- * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for...in
- * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for...of
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
  */
 
 /**

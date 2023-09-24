@@ -13,7 +13,7 @@ describe('Unit 4 - Easy - Arrays:', () => {
 	describe('Task 1 - second element of an array', () => {
 		it('Verifying task1Func returns correct value', () => {
 			const arr = [1, 2, 4];
-			expect(task1Func(arr)).to.equal(arr[2]);
+			expect(task1Func(arr)).to.equal(arr[1]);
 		});
 	});
 

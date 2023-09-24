@@ -6,7 +6,7 @@ const {
 /**
  * Additional Reading:
  *
- * https://learn.javascript.ru/promise-basics
+ * https://uk.javascript.info/promise-basics
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
  */

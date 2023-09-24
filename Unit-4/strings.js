@@ -1,12 +1,12 @@
 /**
  * Additional Reading:
  *
- * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
- * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/typeof
- * https://learn.javascript.ru/regular-expressions
- * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
+ * https://uk.javascript.info/regular-expressions
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
  */
 
 /**
@@ -29,7 +29,7 @@ let task2Func;// enter your code here
  * Create a task3Func which will return a string replacing its part
  * with "Ah-a-ha-ha. Changing a part of the string" string
  * @example
- * task3Func('tests', 'es') => 'tAh-a-ha-ha. Changing a part of the stringt'
+ * task3Func('tests', 'es') => 'tAh-a-ha-ha. Changing a part of the stringts'
  */
 let task3Func;// enter your code here
 
@@ -93,7 +93,7 @@ let task8Func;// enter your code here
  * Task - 9
  * Create a task9Func which will
  * reduce the length of the string.
- * If it is longer than the given maxLength - reduced its length to 6 symbols
+ * If it is longer than the given maxLength - reduced its length to maxLength symbols
  * and add "..." to the end.
  * Return itself if it's not that long.
  * @example

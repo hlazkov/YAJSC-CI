@@ -1,7 +1,7 @@
 /**
  * Additional Reading:
  *
- * https://learn.javascript.ru/classes
+ * https://uk.javascript.info/classes
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
  * https://javascript.info/class
  * https://javascript.info/class-inheritance
@@ -16,7 +16,8 @@
  * 3) method getDescription - 'This is a ${name} with ${numberOfPoints} points'
  */
 // enter your code here
-
+class Figure {
+}
 /**
  * Level - Easy
  * Task - 1 - Part 2
@@ -30,7 +31,7 @@ let figure; // enter your code here
  * Implement class Square that extends Figure with:
  * 1) property sideLength and figureArea
  * 2) constructor should additionally get sideLength and calculate figureArea
- * 3) getter method getArea that returns property figureArea
+ * 3) getter method area that returns property figureArea
  */
 // enter your code here
 

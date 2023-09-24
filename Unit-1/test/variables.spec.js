@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const vars = require('../variables');
+const vars = require('../1_variables');
 
 describe('Unit 1 - Easy - Variables and Data Types', () => {
 

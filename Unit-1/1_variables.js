@@ -1,11 +1,11 @@
 /**
  * Additional Reading:
  *
- * https://learn.javascript.ru/variables
- * https://learn.javascript.ru/types
+ * https://uk.javascript.info/variables
+ * https://uk.javascript.info/types
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Array
- * https://learn.javascript.ru/operators
- * https://learn.javascript.ru/type-conversions
+ * https://uk.javascript.info/operators
+ * https://uk.javascript.info/type-conversions
  * https://habr.com/ru/company/ruvds/blog/347866/
  */
 

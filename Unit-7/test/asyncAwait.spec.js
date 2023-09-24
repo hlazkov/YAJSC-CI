@@ -4,7 +4,7 @@ const {
 	asyncPromiseResolve,
 	asyncPromiseReject,
 	asyncPromiseAll
-} = require("../asyncAwait");
+} = require("../2_asyncAwait");
 
 describe('Unit 7 - Easy - Async-Await:', () => {
 	describe('Task 1 - promise resolved with async await', () => {

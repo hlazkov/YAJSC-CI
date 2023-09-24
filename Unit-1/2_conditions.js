@@ -1,11 +1,11 @@
 /**
  * Additional Reading:
  *
- * https://learn.javascript.ru/comparison
- * https://learn.javascript.ru/ifelse
+ * https://uk.javascript.info/comparison
+ * https://uk.javascript.info/ifelse
  *      or https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
  *      and https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
- * https://learn.javascript.ru/logical-operators
+ * https://uk.javascript.info/logical-operators
  */
 
 /**

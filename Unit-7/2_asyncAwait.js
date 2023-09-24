@@ -1,7 +1,7 @@
 const {
   promiseResolve,
   promiseReject
-} = require('./promises');
+} = require('./1_promises');
 const {promise2, promise1} = require("./utils/utilPromises");
 
 /**

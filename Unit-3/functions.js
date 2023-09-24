@@ -1,12 +1,14 @@
+const Chance = require('chance');
+const chance = new Chance();
 /**
  * Additional Reading:
  *
- * https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Functions
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
- * https://developer.mozilla.org/ru/docs/Glossary/Callback_function
- * https://learn.javascript.ru/callbacks
+ * https://developer.mozilla.org/en-US/docs/Glossary/Callback_function
+ * https://uk.javascript.info/callbacks
  */
 
 /**
