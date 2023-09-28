@@ -142,7 +142,7 @@ let task8;
 /**
  * Level - Easy
  * Task - 9
- * Assign task9 a value which is oposite to someVar
+ * Assign task9 a value which is opposite to someVar
  * NB: Use logical NOT to do the task
  */
 

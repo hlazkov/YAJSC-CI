@@ -75,7 +75,7 @@ describe('Unit 1 - Normal - Variables and Data Types', () => {
     expect(vars.myArr2.length, '"myArr2" length is not correct').to.equal(0);
   });
 
-  it('"myArr3" variable should be created and be an array of lenght 3 with empty values', () => {
+  it('"myArr3" variable should be created and be an array of length 3 with empty values', () => {
     expect(Array.isArray(vars.myArr3)).to.equal(true);
     expect(vars.myArr3.length, '"myArr3" length is not correct').to.equal(3);
     vars.myArr3.forEach((el, i) => {

@@ -79,7 +79,7 @@ describe('Unit 2 - Normal - Cycles:', () => {
     describe('Task 7 - string of every second letter from an array from the end', () => {
         it('Verifying task7Res variable', () => {
             let res = '';
-            for (let i = cycles.task7Array.length - 1; i >= 0 ; i = i-2) {
+            for (let i = cycles.task7Array.length - 2; i >= 0 ; i = i-2) {
                 res = res + cycles.task7Array[i];
             }
             expect(cycles.task7Res).to.equal(res);

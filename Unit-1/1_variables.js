@@ -65,7 +65,7 @@
 /**
  * Level - Normal
  * Create variable named myArr1_1 and set its value to be an empty array
- * make first arrray element to be equal to 'I am the first'
+ * make first array element to be equal to 'I am the first'
  */
 
 // enter your code here
@@ -82,7 +82,7 @@
 
 /**
  * Level - Normal
- * Create variable named myArr3 and set its value to be an array of lenght 3 and have empty elements
+ * Create variable named myArr3 and set its value to be an array of length 3 and have empty elements
  * use Array constructor
  * NOTE: use `new Array` syntax
  */
@@ -91,7 +91,7 @@
 
 /**
  * Level - Normal
- * Create variable named myArr4 and set its value to be an array of lenght 4 and have next elements:
+ * Create variable named myArr4 and set its value to be an array of length 4 and have next elements:
  * first element = 10
  * second element = null
  * third element = "I'm the third one"
@@ -150,7 +150,7 @@
 // enter your code here
 
 /**
- * Create variable named myUndefined2 and set its value equal to without "undefined" word usage
+ * Create variable named myUndefined2 and set its value equal to undefined without "undefined" word usage
  */
 
 // enter your code here
