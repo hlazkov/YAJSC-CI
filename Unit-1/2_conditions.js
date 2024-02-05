@@ -19,7 +19,12 @@
 const x1 = 87;
 let task1;
 
-// enter your code here
+if(x1>100){
+   task1 = 'Greater than 100';
+} else if(x1<=100) {
+   task1 = "Less than or equal 100";
+}
+    
 
 
 /**
@@ -34,7 +39,14 @@ let task1;
 const x2 = 49;
 let task2;
 
-// enter your code here
+if(x2>=50){
+    task2 = "Greater than or equal to 50";
+} else if(x2<-50 && x2>50)
+{
+    task2 = "In range between -50 to 50";
+} else if(x2<=-50){
+    task2 = "Less than -50";
+}
 
 
 /**
@@ -48,7 +60,15 @@ let task2;
 let task3;
 const x3 = 3;
 const y3 = 7;
-// enter your code here
+
+
+if(y3<10){
+    task3 = x3+y3;
+} else if(y3>=10)
+{
+    task3 = x3*y3;
+} 
+
 
 /**
  * Level - Normal
@@ -62,7 +82,7 @@ const y3 = 7;
 
 let task4;
 
-// enter your code here
+ task4 = y3<10 ? x3+y3 : x3*y3;
 
 
 /**
@@ -85,7 +105,18 @@ const num1 = 3;
 const num2 = 7;
 const operator = "add";
 
-// enter your code here
+task5 = (operator =='add')? num1+num3: num2-num1;
+
+switch(operator){
+    case 'add': num1+num2;
+    break;
+    case 'subtract':num1-num2;
+    break;
+    case 'multiply':num1*num2;
+    break;
+    case 'divide':num1/num2;
+    break;
+}
 
 /**
  * Level - Normal
@@ -104,7 +135,19 @@ const productPrice = 49;
 let discount;
 let task6;
 
-// enter your code here
+
+if (productPrice>=1000){
+    discount =0.3;
+}  else if(productPrice<1000 && productPrice>0){
+    discount = 0.2;
+}  else if (productPrice<0)
+{
+    discount = null;
+}
+else {
+    discount;
+}
+task6 = discount;
 
 
 /**
@@ -122,8 +165,19 @@ let task6;
  */
 const totalPrice = 420;
 
-// enter your code here
 let task7;
+
+
+if(totalPrice>0 && totalPrice<350){
+    discount ='0%';
+} else if(totalPrice>351 && totalPrice<1350){
+    discount = '15%';
+} else if(totalPrice>1351 && totalPrice<2700){
+    discount = '30%';
+} else if(totalPrice>2701 && totalPrice<6500){
+    discount = '45%'
+}
+task7 = discount;
 
 /**
  * Level - Normal
@@ -134,10 +188,16 @@ let task7;
  * NB: Your code should not contain `else` statement
  */
 
-
-
-// modify and enter your code here
 let task8;
+
+(x1>100) ? task8 = 'Greater than 100':
+(x1<=100) ? task8 = "Less than or equal 100":
+ task8 = 'Some value';
+
+or
+
+(x1>100) ? task8 = 'Greater than 100': task8 = "Less than or equal 100";
+
 
 /**
  * Level - Easy
@@ -148,7 +208,8 @@ let task8;
 
 const someVar = false
 let task9;
-// modify and enter your code here
+
+task9 =!someVar;
 
 
 /**
@@ -161,7 +222,8 @@ let task9;
 const someVar2 = true;
 let task10;
 // uncomment and modify code below
-// task10 = someVar {remove this curly braces and enter correct code} someVar2;
+
+task10 = !someVar && someVar2;
 
 
 /**
@@ -177,7 +239,8 @@ let task10;
 const a = 10;
 const b = 4
 let task11;
-// enter your code here
+
+task11 = (a>5 && b>5 || a<=5 && b<=5) || true;
 
 /**
  * Hardcore tasks from codewars.com:

@@ -18,7 +18,10 @@ const chance = new Chance();
  * use function definition (also called a function declaration, or function statement)
  */
 
-// enter your code here
+ function task1Func()
+ {
+	return true;
+ }
 
 
 /**
@@ -29,8 +32,15 @@ const chance = new Chance();
  * use function expression
  */
 
-// enter your code here
+let task2Func;
 
+function calculate (yearofbirth)
+{
+	currentyear = 2024;
+     return age = yearofbirth-currentyar;
+}
+
+task2Func = calculate(1988);
 
 /**
  * Level - Easy
@@ -41,8 +51,21 @@ const chance = new Chance();
  * use function expression with arrow function notation
  */
 
-// enter your code here
 
+let task3func;
+
+
+
+let gender = (number1, number2, number3) => {
+	
+	console.log("My gender is" + a);
+	let  a = 'woman';
+	let  b = 'man';
+	let  c = 'other';
+
+}
+
+task3func = gender(a);
 
 /**
  * Level - Easy
@@ -52,7 +75,11 @@ const chance = new Chance();
  * NOTE: assume parameters are always numbers
  */
 
-// enter your code here
+function task4Func(a,b) {
+	    return typeof(a,b) === 'number';
+        return a+b;
+
+}
 
 
 /**
@@ -62,7 +89,12 @@ const chance = new Chance();
  * just make second parameter to have a default value equal 10
  */
 
-// enter your code here
+function task5Func(a,b) {
+	return typeof(a,b) === 'number';
+	b = 10;
+	return a+b;
+
+}
 
 
 /**
@@ -73,7 +105,16 @@ const chance = new Chance();
  * and returns a string firstName plus lastName, separated by space
  */
 
-// enter your code here
+object = {
+      firstname: 'Jack',
+	  lastName: 'London'
+
+}
+function task6Func()
+{
+     return object.firstname + '' + object.lastname;
+
+}
 
 
 /**
@@ -90,8 +131,21 @@ const chance = new Chance();
  * }
  */
 
-// enter your code here
+object = {
+	firstName: '',
+    lastName: '',
+    age: 0
 
+}
+function task7Func()
+{
+   return (console.log('firstname:', + '', + object.firstname));
+   return (console.log('lastname:', + '', + object.firstname));
+   return (console.log('age:', + '', + object.firstname));
+
+
+}
+ task7Func('Jack', 'London', 52);
 
 /**
  * Level - Easy
@@ -101,7 +155,10 @@ const chance = new Chance();
  * Hint: think about a remainder of two numbers
  */
 
-// enter your code here
+ function task8Func() {
+     return num%2 ===0; 'Even'? 'Odd'
+
+ }
 
 
 /**
@@ -111,9 +168,19 @@ const chance = new Chance();
  * @example
  * task9Func(["ten", "two", "four"]) // => ten
  */
+let numbers = ['ten', 'two', 'four']
+function task9Func() {
+	 
+   let getshortest  = 0;
+   for (let i=0; i<numbers.length; i++)
 
-// enter your code here
-
+   if (numbers[i].length < numbers[getshortest].length) {
+	   shortest = i;
+   }
+       return words[getshortest]
+}
+  let shortest = task9Func()
+  console.log ("shortest" + shortest)
 
 /**
  * Level - Easy
@@ -123,7 +190,12 @@ const chance = new Chance();
  * e.g [{direction: "Kiyv - Krakow", distance: 879}, {direction: "Kiyv - Tokyo", distance: 8193}]
  */
 
-// enter your code here
+
+
+function task10Func({cities1: direction = "Kiyv - Krakow", distace = 879}, {cities2: distance = 'Kiyv - Tokyo', distance = 8193}) 
+{
+	return cities1[1] + cities2[1];
+}
 
 
 /**
@@ -143,9 +215,17 @@ const someFunc1 = () => {
 	return chance.sentence(); // returns random sentence
 }
 
-// enter your code here
-
-
+function task11Func (someFunc1) {
+         return someFunc1; 
+}
+{
+	    someFunc1() 
+		{
+            return "This is the result";
+		}
+		
+}
+   console.log("Callback result" + task11Func);
 
 /**
  * Level - Normal
@@ -160,9 +240,20 @@ const someFunc1 = () => {
  * }
  * Note: use rest parameter and use it to get first param value
  */
+object ()
+{
+	paramsNumber: 3;
+	firstParam: _first_param_value_;
 
-// enter your code here
-
+}
+function task12Func (...param)
+{    
+	let i = 0;
+	for (let i of param){
+		task12Func+=i;
+	}
+	return object + '' + object[1];
+}
 
 /**
  * Level - Normal
@@ -171,8 +262,15 @@ const someFunc1 = () => {
  * @example
  * task13Func(5) // => gooooogle
  */
+   let object = ['g', 'o', 'o', 'g', 'l', 'e']
 
-// enter your code here
+   function task13func(object, i)
+   {
+	for (i of object.length)
+	  return object[1].repeat(i);
+	
+   }
+   console.log(task13func(5))
 
 
 /**

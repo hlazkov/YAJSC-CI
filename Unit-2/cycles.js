@@ -20,15 +20,29 @@
 
 let task1For = 0, task1while = 0, task1Do = 0;
 
-// Task - 1: "for" algorithm
-// enter your code here
+task1For;
+let i = 0;
+for (i = 0; i<=10; i++ ) {
+      task1For = task1For+i;
+}
+  
 
 
-// Task - 1: "while" algorithm
-// enter your code here
 
-// Task - 1: "do..while" algorithm
-// enter your code here
+task1while;
+let a = 0;
+while (a<=10){
+       a++;
+       task1while+=a;
+}
+
+task1Do;
+let b = 0;
+do {
+  b = b+1;
+  task1Do+=b;
+} while(b>=10)
+
 
 /**
  * Level - Easy
@@ -43,7 +57,10 @@ const task2x = -238;
 const task2y = 320;
 let task2Res = 0;
 
-// enter your code here
+x = [-238, 320]
+task2Res = 0;
+for (i in x)
+task2Res+=x;
 
 
 /**
@@ -61,7 +78,9 @@ let task2Res = 0;
 const task3Array = ["A", "B", "C", "D", "E", "F", "G", "H", "I"]; // => "ABCDEFGHI"
 let task3Res = '';
 
-// enter your code here
+for (let task3Res of task3Array) {
+    console.log(task3Res);
+}
 
 
 /**
@@ -80,8 +99,8 @@ const task4personIncomes = {
   depositIncome: 281,
 };
 
-// enter your code here
-
+for (i in task4personIncomes)
+    task4TotalIncome+=1;
 
 /**
  * Level - Normal
@@ -94,15 +113,25 @@ const task4personIncomes = {
 let task5ForFactorial = 1, task5WhileFactorial = 1, task5DoFactorial = 1;
 const task5n = 10; //10! = 3628800
 
-// Task - 5: "for" algorithm
-// enter your code here
+
+for (let i =0; i <=task5n, i++)
+     task5DoFactorial*=1;
 
 
-// Task - 5: "while" algorithm
-// enter your code here
+task5WhileFactorial;
+let c = 10;
+while (c<=task5n){
+       c++;
+       task5WhileFactorial*=c;
+}
 
-// Task - 5: "do" algorithm
-// enter your code here
+task5DoFactorial;
+let d = 10;
+do {
+  d = d+1;
+  task5WhileFactorial*=d;
+} while(d<=task5n)
+
 
 /**
  * Level - Normal
@@ -116,7 +145,9 @@ const task5n = 10; //10! = 3628800
 const task6Array = ["A", "B", "C", "D", "E", "F", "G", "H", "I"]; // => "BDFH"
 let task6Res = '';
 
-// enter your code here
+for (i=0;i<task6Array.length; i++)
+     task6Res = task6Res + (task6Array[i].task6array.length+1);
+    console.log(task6Res);
 
 
 /**
@@ -132,7 +163,9 @@ let task6Res = '';
 const task7Array = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]; // => "IGECA"
 let task7Res = '';
 
-// enter your code here
+for (i=1;i<task7Array.length; i--)
+     task6Res = task6Res +(task7Array[i].task7array.length-1);
+    console.log(task7Res);
 
 
 /**
@@ -147,7 +180,9 @@ let task7Res = '';
 const task8Array = [2, 7, 15, 1, 0, 100200];
 let task8Res = 0;
 
-// enter your code here
+for (i of task8Array)
+     i %2 === 0;
+    task8Res+=i;
 
 
 /**
@@ -168,3 +203,12 @@ module.exports = {
   task6Array, task6Res,
   task7Array, task7Res, task8Array, task8Res
 };
+
+
+function myfunction()
+{
+  console.log('Hello world')
+}
+
+let v = myfunction;
+console.log(v());
