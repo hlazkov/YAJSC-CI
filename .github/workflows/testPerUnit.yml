@@ -1,0 +1,11 @@
+name: test-on-push
+run-name: Running tests
+on:
+  push:
+    paths:
+      - '**.js'
+jobs:
+  test-unit-0:
+    uses: hlazkov/YAJSC-CI/.github/workflows/testOnPushBasic.yml@initial
+    with:
+      npm-command: .github/labeler.yml

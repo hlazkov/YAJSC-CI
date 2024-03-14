@@ -1,11 +1,14 @@
-name: test-on-push
-run-name: Running tests
+name: Reusable workflow
+
 on:
-  push:
-    paths:
-      - '**.js'
+  workflow_call:
+    inputs:
+      npm-command:
+        required: true
+        type: string
+
 jobs:
-  check:
+  reusable_job:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -13,4 +16,4 @@ jobs:
         with:
           node-version: '16'
       - run: npm ci
-      - run: npm run test:unit1:conditions
+      - run: npm run ${{ inputs.npm-command }}
