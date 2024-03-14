@@ -1,11 +1,11 @@
-name: test-on-push
-run-name: Running tests
+name: test for Unit 1
+run-name: Running tests for unit 1
 on:
   push:
     paths:
-      - '**.js'
+      - 'Unit-1/**.js'
 jobs:
-  check:
+  test-unit-0:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -13,4 +13,4 @@ jobs:
         with:
           node-version: '16'
       - run: npm ci
-      - run: npm run test:unit1:conditions
+      - run: npm run test:unit1
