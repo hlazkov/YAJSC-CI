@@ -1,0 +1,16 @@
+name: test for Unit 1
+run-name: Running tests for unit 1
+on:
+  push:
+    paths:
+      - 'Unit-1/**.js'
+jobs:
+  test-unit-0:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '16'
+      - run: npm ci
+      - run: npm run test:unit1

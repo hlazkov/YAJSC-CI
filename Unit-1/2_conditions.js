@@ -17,7 +17,7 @@
  */
 
 const x1 = 87;
-let task1;
+let task1 = x1 >= 100 ? "Greater than 100" : "Less than or equal 100"
 
 // enter your code here
 
@@ -32,7 +32,7 @@ let task1;
  */
 
 const x2 = 49;
-let task2;
+let task2 = x2 >= 50 ? "Greater than or equal to 50" : x2 > -50 ? "In range between -50 to 50" : "Less than -50"
 
 // enter your code here
 
